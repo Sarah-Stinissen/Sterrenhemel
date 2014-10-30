@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/Project europlanetarium/Code/Encoder/Zedboard test/Frequentiedeler/Frequentiedeler/Frequentiedeler_TEST_isim_beh.exe" -prj "F:/Project europlanetarium/Code/Encoder/Zedboard test/Frequentiedeler/Frequentiedeler/Frequentiedeler_TEST_beh.prj" "work.Frequentiedeler_TEST" 

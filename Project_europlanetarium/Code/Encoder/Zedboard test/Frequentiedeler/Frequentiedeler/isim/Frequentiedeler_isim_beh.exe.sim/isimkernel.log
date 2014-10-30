@@ -1,0 +1,28 @@
+Command line:
+   Frequentiedeler_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51882
+
+Thu Oct 02 15:48:24 2014
+
+
+ Elaboration Time: 0.312003 sec
+
+ Current Memory Usage: 689.066 Meg
+
+ Total Signals          : 4
+ Total Nets             : 4
+ Total Signal Drivers   : 3
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 2
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 487
+
+ Total Simulation Time: 0.421203 sec
+
+ Current Memory Usage: 689.066 Meg
+
+Thu Oct 02 15:48:27 2014
+

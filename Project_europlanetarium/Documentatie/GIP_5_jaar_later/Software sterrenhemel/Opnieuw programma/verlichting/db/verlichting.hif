@@ -1,0 +1,340 @@
+Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+39
+2649
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+klok
+# storage
+db|verlichting.(1).cnf
+db|verlichting.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|klok|klok.vhd
+decd51bfd7b175ad36ad5513717494cb
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+klok:cl
+}
+# lmf
+..|..|..|..|..|..|altera|80sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+verlichting
+# storage
+db|verlichting.(0).cnf
+db|verlichting.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+verlichting.vhd
+43b33a2e75cbf1ef8b251182c9b8cc7
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|..|..|altera|80sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+decoder
+# storage
+db|verlichting.(2).cnf
+db|verlichting.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|decoder|decoder.vhd
+cb632a20e4201976c3429694fa3c21b5
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(code_in)
+5 downto 0
+PARAMETER_STRING
+USR
+ constraint(code_uit)
+63 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+decoder:ASCII
+}
+# lmf
+..|..|..|..|..|..|altera|80sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+branden
+# storage
+db|verlichting.(3).cnf
+db|verlichting.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|branden|branden.vhd
+e6ec612a136fda31fad6adbe80e7da
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+branden:Knop1
+branden:Knop2
+branden:Knop3
+branden:Knop4
+branden:Knop5
+branden:Knop6
+branden:Knop7
+branden:Knop9
+branden:Knop10
+branden:Knop11
+branden:Knop12
+branden:Knop13
+branden:Knop14
+branden:Knop16
+branden:Knop17
+branden:Knop18
+branden:Knop19
+branden:Knop20
+branden:Knop21
+branden:Knop22
+branden:Knop23
+branden:Knop24
+branden:Knop25
+branden:Knop27
+branden:Knop28
+branden:Knop30
+branden:Knop32
+branden:Knop33
+branden:Knop34
+branden:Knop35
+branden:Knop36
+branden:Knop37
+branden:Knop39
+branden:Knop41
+branden:Knop42
+branden:Knop43
+branden:Knop44
+branden:Knop45
+branden:Knop46
+branden:Knop47
+branden:Knop48
+branden:Knop49
+}
+# lmf
+..|..|..|..|..|..|altera|80sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+tienteller
+# storage
+db|verlichting.(4).cnf
+db|verlichting.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|tienteller|tienteller.vhd
+457055b132c25d2fa947c04a9a3ef1e2
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+branden:Knop1|tienteller:teller
+branden:Knop2|tienteller:teller
+branden:Knop3|tienteller:teller
+branden:Knop4|tienteller:teller
+branden:Knop5|tienteller:teller
+branden:Knop6|tienteller:teller
+branden:Knop7|tienteller:teller
+knipperen:Knop8|tienteller:teller
+branden:Knop9|tienteller:teller
+branden:Knop10|tienteller:teller
+branden:Knop11|tienteller:teller
+branden:Knop12|tienteller:teller
+branden:Knop13|tienteller:teller
+branden:Knop14|tienteller:teller
+branden:Knop16|tienteller:teller
+branden:Knop17|tienteller:teller
+branden:Knop18|tienteller:teller
+branden:Knop19|tienteller:teller
+branden:Knop20|tienteller:teller
+branden:Knop21|tienteller:teller
+branden:Knop22|tienteller:teller
+branden:Knop23|tienteller:teller
+branden:Knop24|tienteller:teller
+branden:Knop25|tienteller:teller
+knipperen:Knop26|tienteller:teller
+branden:Knop27|tienteller:teller
+branden:Knop28|tienteller:teller
+knipperen:Knop29|tienteller:teller
+branden:Knop30|tienteller:teller
+knipperen:Knop31|tienteller:teller
+branden:Knop32|tienteller:teller
+branden:Knop33|tienteller:teller
+branden:Knop34|tienteller:teller
+branden:Knop35|tienteller:teller
+branden:Knop36|tienteller:teller
+branden:Knop37|tienteller:teller
+knipperen:Knop38|tienteller:teller
+branden:Knop39|tienteller:teller
+knipperen:Knop40|tienteller:teller
+branden:Knop41|tienteller:teller
+branden:Knop42|tienteller:teller
+branden:Knop43|tienteller:teller
+branden:Knop44|tienteller:teller
+branden:Knop45|tienteller:teller
+branden:Knop46|tienteller:teller
+branden:Knop47|tienteller:teller
+branden:Knop48|tienteller:teller
+branden:Knop49|tienteller:teller
+knipperen:Knop50|tienteller:teller
+knipperen:Knop51|tienteller:teller
+knipperen:Knop52|tienteller:teller
+knipperen:Knop53|tienteller:teller
+knipperen:Knop54|tienteller:teller
+knipperen:Knop55|tienteller:teller
+knipperen:Knop56|tienteller:teller
+}
+# lmf
+..|..|..|..|..|..|altera|80sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+knipperen
+# storage
+db|verlichting.(5).cnf
+db|verlichting.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|Knipperen|knipperen.vhd
+4624b1914ddfe7837a76ad2c884f3a9
+4
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+knipperen:Knop8
+knipperen:Knop26
+knipperen:Knop29
+knipperen:Knop31
+knipperen:Knop38
+knipperen:Knop40
+knipperen:Knop50
+knipperen:Knop51
+knipperen:Knop52
+knipperen:Knop53
+knipperen:Knop54
+knipperen:Knop55
+knipperen:Knop56
+}
+# lmf
+..|..|..|..|..|..|altera|80sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

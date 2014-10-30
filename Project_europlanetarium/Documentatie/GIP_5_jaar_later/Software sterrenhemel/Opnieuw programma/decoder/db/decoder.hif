@@ -1,0 +1,25 @@
+Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+39
+2649
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# complete
+

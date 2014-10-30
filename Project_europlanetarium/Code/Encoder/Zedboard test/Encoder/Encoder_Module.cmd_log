@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "F:/Project europlanetarium/Code/Encoder/Zedboard test/Encoder/Encoder_Module.xst" -ofn "F:/Project europlanetarium/Code/Encoder/Zedboard test/Encoder/Encoder_Module.syr" 

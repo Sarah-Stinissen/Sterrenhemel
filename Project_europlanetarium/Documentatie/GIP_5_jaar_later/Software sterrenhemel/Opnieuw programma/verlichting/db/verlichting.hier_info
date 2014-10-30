@@ -1,0 +1,1436 @@
+|verlichting
+clock => klok:cl.Clock_in
+clear => knipperen:Knop56.clear
+clear => knipperen:Knop55.clear
+clear => knipperen:Knop54.clear
+clear => knipperen:Knop53.clear
+clear => knipperen:Knop52.clear
+clear => knipperen:Knop51.clear
+clear => knipperen:Knop50.clear
+clear => branden:Knop49.clear
+clear => branden:Knop48.clear
+clear => branden:Knop47.clear
+clear => branden:Knop46.clear
+clear => branden:Knop45.clear
+clear => branden:Knop44.clear
+clear => branden:Knop43.clear
+clear => branden:Knop42.clear
+clear => branden:Knop41.clear
+clear => knipperen:Knop40.clear
+clear => branden:Knop39.clear
+clear => knipperen:Knop38.clear
+clear => branden:Knop37.clear
+clear => branden:Knop36.clear
+clear => branden:Knop35.clear
+clear => branden:Knop34.clear
+clear => branden:Knop33.clear
+clear => branden:Knop32.clear
+clear => knipperen:Knop31.clear
+clear => branden:Knop30.clear
+clear => knipperen:Knop29.clear
+clear => branden:Knop28.clear
+clear => branden:Knop27.clear
+clear => knipperen:Knop26.clear
+clear => branden:Knop25.clear
+clear => branden:Knop24.clear
+clear => branden:Knop23.clear
+clear => branden:Knop22.clear
+clear => branden:Knop21.clear
+clear => branden:Knop20.clear
+clear => branden:Knop19.clear
+clear => branden:Knop18.clear
+clear => branden:Knop17.clear
+clear => branden:Knop16.clear
+clear => branden:Knop14.clear
+clear => branden:Knop13.clear
+clear => branden:Knop12.clear
+clear => branden:Knop11.clear
+clear => branden:Knop10.clear
+clear => branden:Knop9.clear
+clear => knipperen:Knop8.clear
+clear => branden:Knop7.clear
+clear => branden:Knop6.clear
+clear => branden:Knop5.clear
+clear => branden:Knop4.clear
+clear => branden:Knop3.clear
+clear => branden:Knop2.clear
+clear => branden:Knop1.clear
+clear => klok:cl.reset
+code[0] => decoder:ASCII.code_in[0]
+code[1] => decoder:ASCII.code_in[1]
+code[2] => decoder:ASCII.code_in[2]
+code[3] => decoder:ASCII.code_in[3]
+code[4] => decoder:ASCII.code_in[4]
+code[5] => decoder:ASCII.code_in[5]
+cassiopeia <= cassiopeia~0.DB_MAX_OUTPUT_PORT_TYPE
+cepheus <= cepheus~0.DB_MAX_OUTPUT_PORT_TYPE
+draak <= draak~0.DB_MAX_OUTPUT_PORT_TYPE
+grote_beer <= grote_beer~0.DB_MAX_OUTPUT_PORT_TYPE
+kleine_beer <= kleine_beer~0.DB_MAX_OUTPUT_PORT_TYPE
+poolster <= poolster~0.DB_MAX_OUTPUT_PORT_TYPE
+andromeda <= andromeda~0.DB_MAX_OUTPUT_PORT_TYPE
+andromeda_alpha <= andromeda_alpha~0.DB_MAX_OUTPUT_PORT_TYPE
+andromedanevel <= knipperen:Knop8.knipperen
+pegasus <= pegasus~0.DB_MAX_OUTPUT_PORT_TYPE
+driehoek <= driehoek~0.DB_MAX_OUTPUT_PORT_TYPE
+ram <= ram~0.DB_MAX_OUTPUT_PORT_TYPE
+vissen <= vissen~0.DB_MAX_OUTPUT_PORT_TYPE
+walvis <= walvis~0.DB_MAX_OUTPUT_PORT_TYPE
+waterman <= waterman~0.DB_MAX_OUTPUT_PORT_TYPE
+jachthonden <= jachthonden~0.DB_MAX_OUTPUT_PORT_TYPE
+leeuw <= leeuw~0.DB_MAX_OUTPUT_PORT_TYPE
+maagd <= maagd~0.DB_MAX_OUTPUT_PORT_TYPE
+raaf <= raaf~0.DB_MAX_OUTPUT_PORT_TYPE
+waterslang <= waterslang~0.DB_MAX_OUTPUT_PORT_TYPE
+weegschaal <= weegschaal~0.DB_MAX_OUTPUT_PORT_TYPE
+ossehoeder <= ossehoeder~0.DB_MAX_OUTPUT_PORT_TYPE
+noorderkroon <= noorderkroon~0.DB_MAX_OUTPUT_PORT_TYPE
+slang <= slang~0.DB_MAX_OUTPUT_PORT_TYPE
+perseus <= perseus~0.DB_MAX_OUTPUT_PORT_TYPE
+perseus_cluster <= knipperen:Knop26.knipperen
+voerman <= voerman~0.DB_MAX_OUTPUT_PORT_TYPE
+voerman_alpha <= voerman_alpha~0.DB_MAX_OUTPUT_PORT_TYPE
+stier <= stier~0.DB_MAX_OUTPUT_PORT_TYPE
+stier_alpha <= stier_alpha~0.DB_MAX_OUTPUT_PORT_TYPE
+stier_beta <= stier_beta~0.DB_MAX_OUTPUT_PORT_TYPE
+stier_pleiaden <= knipperen:Knop29.knipperen
+orion <= orion~0.DB_MAX_OUTPUT_PORT_TYPE
+orion_beta <= orion_beta~0.DB_MAX_OUTPUT_PORT_TYPE
+orionnevel <= knipperen:Knop31.knipperen
+haas <= haas~0.DB_MAX_OUTPUT_PORT_TYPE
+rivier <= rivier~0.DB_MAX_OUTPUT_PORT_TYPE
+grote_hond <= grote_hond~0.DB_MAX_OUTPUT_PORT_TYPE
+grote_hond_alpha <= grote_hond_alpha~0.DB_MAX_OUTPUT_PORT_TYPE
+kleine_hond <= kleine_hond~0.DB_MAX_OUTPUT_PORT_TYPE
+kleine_hond_alpha <= kleine_hond_alpha~0.DB_MAX_OUTPUT_PORT_TYPE
+tweelingen <= tweelingen~0.DB_MAX_OUTPUT_PORT_TYPE
+tweelingen_alpha <= tweelingen_alpha~0.DB_MAX_OUTPUT_PORT_TYPE
+kreeft <= kreeft~0.DB_MAX_OUTPUT_PORT_TYPE
+krib <= knipperen:Knop38.knipperen
+hercules <= hercules~0.DB_MAX_OUTPUT_PORT_TYPE
+hercules_M13 <= knipperen:Knop40.knipperen
+slangendrager <= slangendrager~0.DB_MAX_OUTPUT_PORT_TYPE
+schorpioen <= schorpioen~0.DB_MAX_OUTPUT_PORT_TYPE
+lier <= lier~0.DB_MAX_OUTPUT_PORT_TYPE
+lier_alpha <= lier_alpha~0.DB_MAX_OUTPUT_PORT_TYPE
+zwaan <= zwaan~0.DB_MAX_OUTPUT_PORT_TYPE
+zwaan_alpha <= zwaan_alpha~0.DB_MAX_OUTPUT_PORT_TYPE
+pijl <= pijl~0.DB_MAX_OUTPUT_PORT_TYPE
+dolfijn <= dolfijn~0.DB_MAX_OUTPUT_PORT_TYPE
+arend <= arend~0.DB_MAX_OUTPUT_PORT_TYPE
+arend_alpha <= arend_alpha~0.DB_MAX_OUTPUT_PORT_TYPE
+boogschutter <= boogschutter~0.DB_MAX_OUTPUT_PORT_TYPE
+steenbok <= steenbok~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|klok:cl
+clock_in => \deler:cnt[31].CLK
+clock_in => \deler:cnt[30].CLK
+clock_in => \deler:cnt[29].CLK
+clock_in => \deler:cnt[28].CLK
+clock_in => \deler:cnt[27].CLK
+clock_in => \deler:cnt[26].CLK
+clock_in => \deler:cnt[25].CLK
+clock_in => \deler:cnt[24].CLK
+clock_in => \deler:cnt[23].CLK
+clock_in => \deler:cnt[22].CLK
+clock_in => \deler:cnt[21].CLK
+clock_in => \deler:cnt[20].CLK
+clock_in => \deler:cnt[19].CLK
+clock_in => \deler:cnt[18].CLK
+clock_in => \deler:cnt[17].CLK
+clock_in => \deler:cnt[16].CLK
+clock_in => \deler:cnt[15].CLK
+clock_in => \deler:cnt[14].CLK
+clock_in => \deler:cnt[13].CLK
+clock_in => \deler:cnt[12].CLK
+clock_in => \deler:cnt[11].CLK
+clock_in => \deler:cnt[10].CLK
+clock_in => \deler:cnt[9].CLK
+clock_in => \deler:cnt[8].CLK
+clock_in => \deler:cnt[7].CLK
+clock_in => \deler:cnt[6].CLK
+clock_in => \deler:cnt[5].CLK
+clock_in => \deler:cnt[4].CLK
+clock_in => \deler:cnt[3].CLK
+clock_in => \deler:cnt[2].CLK
+clock_in => \deler:cnt[1].CLK
+clock_in => \deler:cnt[0].CLK
+clock_in => s_klok.CLK
+reset => \deler:cnt[31].ACLR
+reset => \deler:cnt[30].ACLR
+reset => \deler:cnt[29].ACLR
+reset => \deler:cnt[28].ACLR
+reset => \deler:cnt[27].ACLR
+reset => \deler:cnt[26].ACLR
+reset => \deler:cnt[25].ACLR
+reset => \deler:cnt[24].ACLR
+reset => \deler:cnt[23].ACLR
+reset => \deler:cnt[22].ACLR
+reset => \deler:cnt[21].ACLR
+reset => \deler:cnt[20].ACLR
+reset => \deler:cnt[19].ACLR
+reset => \deler:cnt[18].ACLR
+reset => \deler:cnt[17].ACLR
+reset => \deler:cnt[16].ACLR
+reset => \deler:cnt[15].ACLR
+reset => \deler:cnt[14].ACLR
+reset => \deler:cnt[13].ACLR
+reset => \deler:cnt[12].ACLR
+reset => \deler:cnt[11].ACLR
+reset => \deler:cnt[10].ACLR
+reset => \deler:cnt[9].ACLR
+reset => \deler:cnt[8].ACLR
+reset => \deler:cnt[7].ACLR
+reset => \deler:cnt[6].ACLR
+reset => \deler:cnt[5].ACLR
+reset => \deler:cnt[4].ACLR
+reset => \deler:cnt[3].ACLR
+reset => \deler:cnt[2].ACLR
+reset => \deler:cnt[1].ACLR
+reset => \deler:cnt[0].ACLR
+reset => s_klok.ENA
+clock_uit <= s_klok.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|decoder:ASCII
+code_in[0] => Ram0.RADDR
+code_in[1] => Ram0.RADDR1
+code_in[2] => Ram0.RADDR2
+code_in[3] => Ram0.RADDR3
+code_in[4] => Ram0.RADDR4
+code_in[5] => Ram0.RADDR5
+code_uit[0] <= Ram0.DATAOUT
+code_uit[1] <= Ram0.DATAOUT1
+code_uit[2] <= Ram0.DATAOUT2
+code_uit[3] <= Ram0.DATAOUT3
+code_uit[4] <= Ram0.DATAOUT4
+code_uit[5] <= Ram0.DATAOUT5
+code_uit[6] <= Ram0.DATAOUT6
+code_uit[7] <= Ram0.DATAOUT7
+code_uit[8] <= Ram0.DATAOUT8
+code_uit[9] <= Ram0.DATAOUT9
+code_uit[10] <= Ram0.DATAOUT10
+code_uit[11] <= Ram0.DATAOUT11
+code_uit[12] <= Ram0.DATAOUT12
+code_uit[13] <= Ram0.DATAOUT13
+code_uit[14] <= Ram0.DATAOUT14
+code_uit[15] <= Ram0.DATAOUT15
+code_uit[16] <= Ram0.DATAOUT16
+code_uit[17] <= Ram0.DATAOUT17
+code_uit[18] <= Ram0.DATAOUT18
+code_uit[19] <= Ram0.DATAOUT19
+code_uit[20] <= Ram0.DATAOUT20
+code_uit[21] <= Ram0.DATAOUT21
+code_uit[22] <= Ram0.DATAOUT22
+code_uit[23] <= Ram0.DATAOUT23
+code_uit[24] <= Ram0.DATAOUT24
+code_uit[25] <= Ram0.DATAOUT25
+code_uit[26] <= Ram0.DATAOUT26
+code_uit[27] <= Ram0.DATAOUT27
+code_uit[28] <= Ram0.DATAOUT28
+code_uit[29] <= Ram0.DATAOUT29
+code_uit[30] <= Ram0.DATAOUT30
+code_uit[31] <= Ram0.DATAOUT31
+code_uit[32] <= Ram0.DATAOUT32
+code_uit[33] <= Ram0.DATAOUT33
+code_uit[34] <= Ram0.DATAOUT34
+code_uit[35] <= Ram0.DATAOUT35
+code_uit[36] <= Ram0.DATAOUT36
+code_uit[37] <= Ram0.DATAOUT37
+code_uit[38] <= Ram0.DATAOUT38
+code_uit[39] <= Ram0.DATAOUT39
+code_uit[40] <= Ram0.DATAOUT40
+code_uit[41] <= Ram0.DATAOUT41
+code_uit[42] <= Ram0.DATAOUT42
+code_uit[43] <= Ram0.DATAOUT43
+code_uit[44] <= Ram0.DATAOUT44
+code_uit[45] <= Ram0.DATAOUT45
+code_uit[46] <= Ram0.DATAOUT46
+code_uit[47] <= Ram0.DATAOUT47
+code_uit[48] <= Ram0.DATAOUT48
+code_uit[49] <= Ram0.DATAOUT49
+code_uit[50] <= Ram0.DATAOUT50
+code_uit[51] <= Ram0.DATAOUT51
+code_uit[52] <= Ram0.DATAOUT52
+code_uit[53] <= Ram0.DATAOUT53
+code_uit[54] <= Ram0.DATAOUT54
+code_uit[55] <= Ram0.DATAOUT55
+code_uit[56] <= Ram0.DATAOUT56
+code_uit[57] <= Ram0.DATAOUT57
+code_uit[58] <= Ram0.DATAOUT58
+code_uit[59] <= Ram0.DATAOUT59
+code_uit[60] <= Ram0.DATAOUT60
+code_uit[61] <= Ram0.DATAOUT61
+code_uit[62] <= Ram0.DATAOUT62
+code_uit[63] <= Ram0.DATAOUT63
+
+
+|verlichting|branden:Knop1
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop1|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop2
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop2|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop3
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop3|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop4
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop4|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop5
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop5|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop6
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop6|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop7
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop7|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop8
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop8|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop9
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop9|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop10
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop10|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop11
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop11|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop12
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop12|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop13
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop13|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop14
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop14|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop16
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop16|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop17
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop17|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop18
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop18|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop19
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop19|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop20
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop20|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop21
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop21|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop22
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop22|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop23
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop23|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop24
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop24|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop25
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop25|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop26
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop26|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop27
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop27|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop28
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop28|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop29
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop29|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop30
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop30|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop31
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop31|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop32
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop32|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop33
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop33|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop34
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop34|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop35
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop35|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop36
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop36|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop37
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop37|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop38
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop38|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop39
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop39|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop40
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop40|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop41
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop41|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop42
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop42|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop43
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop43|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop44
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop44|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop45
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop45|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop46
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop46|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop47
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop47|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop48
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop48|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop49
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|branden:Knop49|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop50
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop50|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop51
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop51|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop52
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop52|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop53
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop53|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop54
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop54|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop55
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop55|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop56
+Clock => tienteller:teller.Clock
+Clock => knipperen~1.IN0
+clear => knipperen~0.IN1
+drukknop => tienteller:teller.drukknop
+knipperen <= knipperen~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|verlichting|knipperen:Knop56|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

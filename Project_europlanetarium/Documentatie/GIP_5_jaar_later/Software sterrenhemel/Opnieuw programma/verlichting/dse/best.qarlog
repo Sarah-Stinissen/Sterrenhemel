@@ -1,0 +1,90 @@
+Quartus II Archive log --	C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/best.qarlog
+
+Archive:	C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/best.qar
+Date:		Mon May 18 15:11:55 2009
+Quartus II		8.0 Build 231 07/10/2008 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/Knipperen/knipperen.vhd
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/branden/branden.vhd
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/decoder/decoder.vhd
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/klok/klok.vhd
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/tienteller/tienteller.vhd
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/prev_cmp_verlichting.asm.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/prev_cmp_verlichting.eda.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/prev_cmp_verlichting.fit.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/prev_cmp_verlichting.map.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/prev_cmp_verlichting.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/prev_cmp_verlichting.tan.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/rom0_decoder_896c74ae.hdl.mif
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(0).cnf.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(0).cnf.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(1).cnf.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(1).cnf.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(2).cnf.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(2).cnf.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(3).cnf.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(3).cnf.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(4).cnf.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(4).cnf.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(5).cnf.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.(5).cnf.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.analyze_file.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.asm.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.asm_labs.ddb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.cbx.xml
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.cmp.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.cmp.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.cmp.logdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.cmp.rdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.cmp.tdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.cmp0.ddb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.db_info
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.eco.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.eda.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.fit.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.hier_info
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.hif
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.map.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.map.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.map.logdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.map.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.pre_map.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.pre_map.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.qpf
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.rtlv.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.rtlv_sg.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.rtlv_sg_swap.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.sgdiff.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.sgdiff.hdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.signalprobe.cdb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.sld_design_entry.sci
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.sld_design_entry_dsc.sci
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.syn_hier_info
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.tan.qmsg
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.tis_db_list.ddb
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/db/verlichting.tmw_info
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.asm.rpt
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.cdf
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.done
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.dpf
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.dse.rpt
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.eda.rpt
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.fit.rpt
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.fit.summary
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.flow.rpt
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.map.rpt
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.map.summary
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.pin
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.pof
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.qsf
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.qws
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.tan.rpt
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.tan.summary
+C:/Users/Sarah Stinissen/Desktop/alles wa met Gip te maken heeft/Opnieuw programma/verlichting/verlichting.vhd
+c:/altera/80sp1/quartus/bin/assignment_defaults.qdf
+zlib_out_time_stamp_tmp.tmp
+	======= Total: 79 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

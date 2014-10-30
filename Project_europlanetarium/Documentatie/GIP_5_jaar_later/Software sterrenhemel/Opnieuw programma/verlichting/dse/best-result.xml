@@ -1,0 +1,70 @@
+
+<RESULTS project="verlichting" revname="verlichting" isbest="0" arcname="" wasCompiled="1" name="base">
+ <COPYRIGHT>Copyright (C) 2002 Altera Corporation. All rights reserved.
+                This information and code is highly confidential and proprietary
+                information and code of Altera and is being provided in accordance
+                with and subject to the protections of a non-disclosure agreement
+                which governs its use and disclosure.  Altera products and services
+                are protected under numerous U.S. and foreign patents, maskwork rights
+                copyrights and other intellectual property laws.  Altera assumes no
+                responsibility or liability arising out of the application or use
+                of this information and code. This notice must be retained and
+                reprinted on any copies of this information and code that are
+                permitted to be made.</COPYRIGHT>
+ <SETTING name="PLACEMENT_EFFORT_MULTIPLIER">1.0</SETTING>
+ <SETTING name="PHYSICAL_SYNTHESIS_REGISTER_RETIMING">OFF</SETTING>
+ <SETTING name="ROUTER_TIMING_OPTIMIZATION_LEVEL">NORMAL</SETTING>
+ <SETTING name="PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION">OFF</SETTING>
+ <SETTING name="ADV_NETLIST_OPT_SYNTH_GATE_RETIME">OFF</SETTING>
+ <SETTING name="SEED">1</SETTING>
+ <SETTING name="PHYSICAL_SYNTHESIS_COMBO_LOGIC">OFF</SETTING>
+ <SETTING name="AUTO_PACKED_REGISTERS_MAXII">AUTO</SETTING>
+ <SETTING name="ADV_NETLIST_OPT_SYNTH_WYSIWYG_REMAP">OFF</SETTING>
+ <SETTING name="FITTER_EFFORT">AUTO FIT</SETTING>
+ <SETTING name="PHYSICAL_SYNTHESIS_EFFORT">NORMAL</SETTING>
+ <RESULT name="Clock Setup: 'clock': Failed Paths">0</RESULT>
+ <RESULT name="I/O pins">67</RESULT>
+ <RESULT name="Quality of Fit">0.0</RESULT>
+ <RESULT name="Clock Setup: 'clock': Slack">unknown</RESULT>
+ <RESULT name="Global signals">4</RESULT>
+ <RESULT name="Average Slack for Failing Paths">0</RESULT>
+ <RESULT name="Elapsed Time: Analysis &amp; Synthesis">00:00:09</RESULT>
+ <RESULT name="Elapsed Time: Total">00:00:18</RESULT>
+ <RESULT name="All Failing Paths">0</RESULT>
+ <RESULT name="Worst-case tpd: Actual Time">6.608 ns</RESULT>
+ <RESULT name="Worst-case th: Failed Paths">0</RESULT>
+ <RESULT name="Worst-case tsu: Slack">unknown</RESULT>
+ <RESULT name="Average fan-out">3.88</RESULT>
+ <RESULT name="Total Thermal Power Dissipation">unknown</RESULT>
+ <RESULT name="Elapsed Time: Assembler">00:00:01</RESULT>
+ <RESULT name="All Clock Removal Failing Paths">0</RESULT>
+ <RESULT name="Worst-case tco: Failed Paths">0</RESULT>
+ <RESULT name="Total fan-out">2288</RESULT>
+ <RESULT name="UFM blocks">0</RESULT>
+ <RESULT name="Total LABs">65</RESULT>
+ <RESULT name="All Clock Recovery Failing Paths">0</RESULT>
+ <RESULT name="All Clock Hold Failing Paths">0</RESULT>
+ <RESULT name="Worst-case Slack">unknown ns (unknown)</RESULT>
+ <RESULT name="Total logic elements">523</RESULT>
+ <RESULT name="Elapsed Time: Classic Timing Analyzer">00:00:03</RESULT>
+ <RESULT name="Worst-case th: Actual Time">-1.605 ns</RESULT>
+ <RESULT name="Maximum fan-out">333</RESULT>
+ <RESULT name="Global clocks">4</RESULT>
+ <RESULT name="All Clock Setup Failing Paths">0</RESULT>
+ <RESULT name="Worst-case tpd: Slack">unknown</RESULT>
+ <RESULT name="Clock Period: Geometric Mean">5.97 ns</RESULT>
+ <RESULT name="Worst-case tco: Actual Time">11.380 ns</RESULT>
+ <RESULT name="Worst-case tsu: Failed Paths">0</RESULT>
+ <RESULT name="Total registers">308</RESULT>
+ <RESULT name="Worst-case th: Slack">unknown</RESULT>
+ <RESULT name="Clock Setup: 'clock': Actual Time">5.969 ns</RESULT>
+ <RESULT name="Highest non-global fan-out signal">1</RESULT>
+ <RESULT name="Elapsed Time: Fitter">00:00:05</RESULT>
+ <RESULT name="Maximum fan-out node">klok:cl|s_klok</RESULT>
+ <RESULT name="Clock pins">2</RESULT>
+ <RESULT name="Worst-case tco: Slack">unknown</RESULT>
+ <RESULT name="Highest non-global fan-out">55</RESULT>
+ <RESULT name="Worst-case tpd: Failed Paths">0</RESULT>
+ <RESULT name="Worst-case tsu: Actual Time">1.951 ns</RESULT>
+</RESULTS>
+

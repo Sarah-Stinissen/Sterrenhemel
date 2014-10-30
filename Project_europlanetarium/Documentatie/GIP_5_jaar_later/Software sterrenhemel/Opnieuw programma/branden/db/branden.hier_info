@@ -1,0 +1,21 @@
+|branden
+Clock => tienteller:teller.Clock
+clear => branden~0.IN1
+drukknop => tienteller:teller.drukknop
+branden <= branden~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|branden|tienteller:teller
+drukknop => tel[3].ACLR
+drukknop => tel[2].ACLR
+drukknop => tel[1].ACLR
+drukknop => tel[0].ACLR
+drukknop => teller~reg0.PRESET
+Clock => tel[3].CLK
+Clock => tel[2].CLK
+Clock => tel[1].CLK
+Clock => tel[0].CLK
+Clock => teller~reg0.CLK
+teller <= teller~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

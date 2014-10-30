@@ -1,0 +1,12 @@
+ISim log file
+Running: F:\Project europlanetarium\Code\Encoder\Zedboard test\Frequentiedeler\Frequentiedeler\Frequentiedeler_TEST_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb F:/Project europlanetarium/Code/Encoder/Zedboard test/Frequentiedeler/Frequentiedeler/Frequentiedeler_TEST_isim_beh.wdb 
+ISim P.68d (signature 0x8ef4fb42)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 200ms
+Stopped at time : 108539283 ns : File "F:/Project europlanetarium/Code/Encoder/Zedboard test/Frequentiedeler/Frequentiedeler/Frequentiedeler.vhd" Line 45

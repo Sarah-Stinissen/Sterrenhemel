@@ -1,0 +1,660 @@
+Classic Timing Analyzer report for verlichting
+Fri May 22 12:13:20 2009
+Quartus II Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Clock Setup: 'clock'
+  6. tsu
+  7. tco
+  8. tpd
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                            ;
++------------------------------+-------+---------------+----------------------------------+-------------------------------------------+-----------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From                                      ; To                    ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+-------------------------------------------+-----------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 1.951 ns                         ; clear                                     ; klok:cl|s_klok        ; --         ; clock    ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 11.380 ns                        ; knipperen:Knop55|tienteller:teller|teller ; voerman_alpha         ; clock      ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 6.608 ns                         ; clear                                     ; voerman_alpha         ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; -1.605 ns                        ; clear                                     ; klok:cl|s_klok        ; --         ; clock    ; 0            ;
+; Clock Setup: 'clock'         ; N/A   ; None          ; 167.53 MHz ( period = 5.969 ns ) ; klok:cl|\deler:cnt[1]                     ; klok:cl|\deler:cnt[6] ; clock      ; clock    ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;                                           ;                       ;            ;          ; 0            ;
++------------------------------+-------+---------------+----------------------------------+-------------------------------------------+-----------------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EPM2210F324C3      ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clock           ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clock'                                                                                                                                                                                                                                        ;
++-----------------------------------------+-----------------------------------------------------+------------------------+------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack                                   ; Actual fmax (period)                                ; From                   ; To                     ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-----------------------------------------+-----------------------------------------------------+------------------------+------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A                                     ; 167.53 MHz ( period = 5.969 ns )                    ; klok:cl|\deler:cnt[1]  ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 5.526 ns                ;
+; N/A                                     ; 167.62 MHz ( period = 5.966 ns )                    ; klok:cl|\deler:cnt[1]  ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 5.523 ns                ;
+; N/A                                     ; 170.53 MHz ( period = 5.864 ns )                    ; klok:cl|\deler:cnt[5]  ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 5.421 ns                ;
+; N/A                                     ; 170.62 MHz ( period = 5.861 ns )                    ; klok:cl|\deler:cnt[5]  ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 5.418 ns                ;
+; N/A                                     ; 173.19 MHz ( period = 5.774 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 5.331 ns                ;
+; N/A                                     ; 173.28 MHz ( period = 5.771 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 5.328 ns                ;
+; N/A                                     ; 174.03 MHz ( period = 5.746 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 5.303 ns                ;
+; N/A                                     ; 174.13 MHz ( period = 5.743 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 5.300 ns                ;
+; N/A                                     ; 175.72 MHz ( period = 5.691 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 5.248 ns                ;
+; N/A                                     ; 175.81 MHz ( period = 5.688 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 5.245 ns                ;
+; N/A                                     ; 177.15 MHz ( period = 5.645 ns )                    ; klok:cl|\deler:cnt[2]  ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 5.202 ns                ;
+; N/A                                     ; 177.24 MHz ( period = 5.642 ns )                    ; klok:cl|\deler:cnt[2]  ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 5.199 ns                ;
+; N/A                                     ; 178.13 MHz ( period = 5.614 ns )                    ; klok:cl|\deler:cnt[30] ; klok:cl|\deler:cnt[13] ; clock      ; clock    ; None                        ; None                      ; 5.171 ns                ;
+; N/A                                     ; 178.22 MHz ( period = 5.611 ns )                    ; klok:cl|\deler:cnt[30] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 5.168 ns                ;
+; N/A                                     ; 178.32 MHz ( period = 5.608 ns )                    ; klok:cl|\deler:cnt[30] ; klok:cl|s_klok         ; clock      ; clock    ; None                        ; None                      ; 5.165 ns                ;
+; N/A                                     ; 181.32 MHz ( period = 5.515 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[13] ; clock      ; clock    ; None                        ; None                      ; 5.072 ns                ;
+; N/A                                     ; 181.42 MHz ( period = 5.512 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 5.069 ns                ;
+; N/A                                     ; 181.52 MHz ( period = 5.509 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|s_klok         ; clock      ; clock    ; None                        ; None                      ; 5.066 ns                ;
+; N/A                                     ; 181.72 MHz ( period = 5.503 ns )                    ; klok:cl|\deler:cnt[28] ; klok:cl|\deler:cnt[13] ; clock      ; clock    ; None                        ; None                      ; 5.060 ns                ;
+; N/A                                     ; 181.82 MHz ( period = 5.500 ns )                    ; klok:cl|\deler:cnt[28] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 5.057 ns                ;
+; N/A                                     ; 181.92 MHz ( period = 5.497 ns )                    ; klok:cl|\deler:cnt[28] ; klok:cl|s_klok         ; clock      ; clock    ; None                        ; None                      ; 5.054 ns                ;
+; N/A                                     ; 182.02 MHz ( period = 5.494 ns )                    ; klok:cl|\deler:cnt[1]  ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 5.051 ns                ;
+; N/A                                     ; 182.02 MHz ( period = 5.494 ns )                    ; klok:cl|\deler:cnt[1]  ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 5.051 ns                ;
+; N/A                                     ; 182.05 MHz ( period = 5.493 ns )                    ; klok:cl|\deler:cnt[1]  ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 5.050 ns                ;
+; N/A                                     ; 182.08 MHz ( period = 5.492 ns )                    ; klok:cl|\deler:cnt[1]  ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 5.049 ns                ;
+; N/A                                     ; 182.12 MHz ( period = 5.491 ns )                    ; klok:cl|\deler:cnt[1]  ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 5.048 ns                ;
+; N/A                                     ; 182.25 MHz ( period = 5.487 ns )                    ; klok:cl|\deler:cnt[1]  ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 5.044 ns                ;
+; N/A                                     ; 182.92 MHz ( period = 5.467 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 5.024 ns                ;
+; N/A                                     ; 183.02 MHz ( period = 5.464 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 5.021 ns                ;
+; N/A                                     ; 184.03 MHz ( period = 5.434 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.991 ns                ;
+; N/A                                     ; 184.60 MHz ( period = 5.417 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.974 ns                ;
+; N/A                                     ; 184.98 MHz ( period = 5.406 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.963 ns                ;
+; N/A                                     ; 185.56 MHz ( period = 5.389 ns )                    ; klok:cl|\deler:cnt[5]  ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.946 ns                ;
+; N/A                                     ; 185.56 MHz ( period = 5.389 ns )                    ; klok:cl|\deler:cnt[5]  ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 4.946 ns                ;
+; N/A                                     ; 185.60 MHz ( period = 5.388 ns )                    ; klok:cl|\deler:cnt[5]  ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.945 ns                ;
+; N/A                                     ; 185.63 MHz ( period = 5.387 ns )                    ; klok:cl|\deler:cnt[5]  ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 4.944 ns                ;
+; N/A                                     ; 185.67 MHz ( period = 5.386 ns )                    ; klok:cl|\deler:cnt[5]  ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.943 ns                ;
+; N/A                                     ; 185.80 MHz ( period = 5.382 ns )                    ; klok:cl|\deler:cnt[5]  ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 4.939 ns                ;
+; N/A                                     ; 185.87 MHz ( period = 5.380 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.937 ns                ;
+; N/A                                     ; 185.91 MHz ( period = 5.379 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.936 ns                ;
+; N/A                                     ; 186.46 MHz ( period = 5.363 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.920 ns                ;
+; N/A                                     ; 186.50 MHz ( period = 5.362 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.919 ns                ;
+; N/A                                     ; 186.85 MHz ( period = 5.352 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.909 ns                ;
+; N/A                                     ; 186.85 MHz ( period = 5.352 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.909 ns                ;
+; N/A                                     ; 186.88 MHz ( period = 5.351 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.908 ns                ;
+; N/A                                     ; 187.06 MHz ( period = 5.346 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.903 ns                ;
+; N/A                                     ; 187.44 MHz ( period = 5.335 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.892 ns                ;
+; N/A                                     ; 187.62 MHz ( period = 5.330 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.887 ns                ;
+; N/A                                     ; 187.76 MHz ( period = 5.326 ns )                    ; klok:cl|\deler:cnt[9]  ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 4.883 ns                ;
+; N/A                                     ; 187.83 MHz ( period = 5.324 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.881 ns                ;
+; N/A                                     ; 187.86 MHz ( period = 5.323 ns )                    ; klok:cl|\deler:cnt[9]  ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 4.880 ns                ;
+; N/A                                     ; 188.22 MHz ( period = 5.313 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.870 ns                ;
+; N/A                                     ; 188.39 MHz ( period = 5.308 ns )                    ; klok:cl|\deler:cnt[0]  ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 4.865 ns                ;
+; N/A                                     ; 188.50 MHz ( period = 5.305 ns )                    ; klok:cl|\deler:cnt[0]  ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 4.862 ns                ;
+; N/A                                     ; 188.61 MHz ( period = 5.302 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.859 ns                ;
+; N/A                                     ; 188.61 MHz ( period = 5.302 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.859 ns                ;
+; N/A                                     ; 188.71 MHz ( period = 5.299 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.856 ns                ;
+; N/A                                     ; 188.71 MHz ( period = 5.299 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 4.856 ns                ;
+; N/A                                     ; 188.79 MHz ( period = 5.297 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 4.854 ns                ;
+; N/A                                     ; 188.82 MHz ( period = 5.296 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.853 ns                ;
+; N/A                                     ; 188.96 MHz ( period = 5.292 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.849 ns                ;
+; N/A                                     ; 188.96 MHz ( period = 5.292 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 4.849 ns                ;
+; N/A                                     ; 189.00 MHz ( period = 5.291 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.848 ns                ;
+; N/A                                     ; 189.32 MHz ( period = 5.282 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.839 ns                ;
+; N/A                                     ; 189.39 MHz ( period = 5.280 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.837 ns                ;
+; N/A                                     ; 189.72 MHz ( period = 5.271 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.828 ns                ;
+; N/A                                     ; 189.72 MHz ( period = 5.271 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 4.828 ns                ;
+; N/A                                     ; 189.72 MHz ( period = 5.271 ns )                    ; klok:cl|\deler:cnt[22] ; klok:cl|\deler:cnt[13] ; clock      ; clock    ; None                        ; None                      ; 4.828 ns                ;
+; N/A                                     ; 189.75 MHz ( period = 5.270 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.827 ns                ;
+; N/A                                     ; 189.79 MHz ( period = 5.269 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 4.826 ns                ;
+; N/A                                     ; 189.83 MHz ( period = 5.268 ns )                    ; klok:cl|\deler:cnt[22] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.825 ns                ;
+; N/A                                     ; 189.83 MHz ( period = 5.268 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.825 ns                ;
+; N/A                                     ; 189.93 MHz ( period = 5.265 ns )                    ; klok:cl|\deler:cnt[22] ; klok:cl|s_klok         ; clock      ; clock    ; None                        ; None                      ; 4.822 ns                ;
+; N/A                                     ; 189.97 MHz ( period = 5.264 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.821 ns                ;
+; N/A                                     ; 189.97 MHz ( period = 5.264 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 4.821 ns                ;
+; N/A                                     ; 190.15 MHz ( period = 5.259 ns )                    ; klok:cl|\deler:cnt[30] ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.816 ns                ;
+; N/A                                     ; 190.40 MHz ( period = 5.252 ns )                    ; klok:cl|\deler:cnt[30] ; klok:cl|\deler:cnt[11] ; clock      ; clock    ; None                        ; None                      ; 4.809 ns                ;
+; N/A                                     ; 190.44 MHz ( period = 5.251 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.808 ns                ;
+; N/A                                     ; 190.44 MHz ( period = 5.251 ns )                    ; klok:cl|\deler:cnt[30] ; klok:cl|\deler:cnt[12] ; clock      ; clock    ; None                        ; None                      ; 4.808 ns                ;
+; N/A                                     ; 190.77 MHz ( period = 5.242 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.799 ns                ;
+; N/A                                     ; 190.99 MHz ( period = 5.236 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.793 ns                ;
+; N/A                                     ; 191.06 MHz ( period = 5.234 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.791 ns                ;
+; N/A                                     ; 191.13 MHz ( period = 5.232 ns )                    ; klok:cl|\deler:cnt[10] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.789 ns                ;
+; N/A                                     ; 191.28 MHz ( period = 5.228 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.785 ns                ;
+; N/A                                     ; 191.31 MHz ( period = 5.227 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.784 ns                ;
+; N/A                                     ; 191.39 MHz ( period = 5.225 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.782 ns                ;
+; N/A                                     ; 191.46 MHz ( period = 5.223 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.780 ns                ;
+; N/A                                     ; 191.57 MHz ( period = 5.220 ns )                    ; klok:cl|\deler:cnt[14] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.777 ns                ;
+; N/A                                     ; 191.57 MHz ( period = 5.220 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.777 ns                ;
+; N/A                                     ; 191.72 MHz ( period = 5.216 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.773 ns                ;
+; N/A                                     ; 191.72 MHz ( period = 5.216 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 4.773 ns                ;
+; N/A                                     ; 191.75 MHz ( period = 5.215 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.772 ns                ;
+; N/A                                     ; 191.75 MHz ( period = 5.215 ns )                    ; klok:cl|\deler:cnt[10] ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.772 ns                ;
+; N/A                                     ; 191.79 MHz ( period = 5.214 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 4.771 ns                ;
+; N/A                                     ; 191.83 MHz ( period = 5.213 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.770 ns                ;
+; N/A                                     ; 191.86 MHz ( period = 5.212 ns )                    ; klok:cl|\deler:cnt[13] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.769 ns                ;
+; N/A                                     ; 191.86 MHz ( period = 5.212 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.769 ns                ;
+; N/A                                     ; 191.98 MHz ( period = 5.209 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 4.766 ns                ;
+; N/A                                     ; 192.16 MHz ( period = 5.204 ns )                    ; klok:cl|\deler:cnt[10] ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.761 ns                ;
+; N/A                                     ; 192.20 MHz ( period = 5.203 ns )                    ; klok:cl|\deler:cnt[14] ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.760 ns                ;
+; N/A                                     ; 192.20 MHz ( period = 5.203 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.760 ns                ;
+; N/A                                     ; 192.31 MHz ( period = 5.200 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.757 ns                ;
+; N/A                                     ; 192.49 MHz ( period = 5.195 ns )                    ; klok:cl|\deler:cnt[13] ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.752 ns                ;
+; N/A                                     ; 192.60 MHz ( period = 5.192 ns )                    ; klok:cl|\deler:cnt[14] ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.749 ns                ;
+; N/A                                     ; 192.90 MHz ( period = 5.184 ns )                    ; klok:cl|\deler:cnt[13] ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.741 ns                ;
+; N/A                                     ; 192.98 MHz ( period = 5.182 ns )                    ; klok:cl|\deler:cnt[10] ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.739 ns                ;
+; N/A                                     ; 193.12 MHz ( period = 5.178 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.735 ns                ;
+; N/A                                     ; 193.31 MHz ( period = 5.173 ns )                    ; klok:cl|\deler:cnt[29] ; klok:cl|\deler:cnt[13] ; clock      ; clock    ; None                        ; None                      ; 4.730 ns                ;
+; N/A                                     ; 193.42 MHz ( period = 5.170 ns )                    ; klok:cl|\deler:cnt[2]  ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.727 ns                ;
+; N/A                                     ; 193.42 MHz ( period = 5.170 ns )                    ; klok:cl|\deler:cnt[29] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.727 ns                ;
+; N/A                                     ; 193.42 MHz ( period = 5.170 ns )                    ; klok:cl|\deler:cnt[2]  ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 4.727 ns                ;
+; N/A                                     ; 193.46 MHz ( period = 5.169 ns )                    ; klok:cl|\deler:cnt[2]  ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.726 ns                ;
+; N/A                                     ; 193.50 MHz ( period = 5.168 ns )                    ; klok:cl|\deler:cnt[2]  ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 4.725 ns                ;
+; N/A                                     ; 193.54 MHz ( period = 5.167 ns )                    ; klok:cl|\deler:cnt[29] ; klok:cl|s_klok         ; clock      ; clock    ; None                        ; None                      ; 4.724 ns                ;
+; N/A                                     ; 193.54 MHz ( period = 5.167 ns )                    ; klok:cl|\deler:cnt[2]  ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.724 ns                ;
+; N/A                                     ; 193.57 MHz ( period = 5.166 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.723 ns                ;
+; N/A                                     ; 193.61 MHz ( period = 5.165 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.722 ns                ;
+; N/A                                     ; 193.61 MHz ( period = 5.165 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.722 ns                ;
+; N/A                                     ; 193.69 MHz ( period = 5.163 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.720 ns                ;
+; N/A                                     ; 193.69 MHz ( period = 5.163 ns )                    ; klok:cl|\deler:cnt[2]  ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 4.720 ns                ;
+; N/A                                     ; 193.80 MHz ( period = 5.160 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.717 ns                ;
+; N/A                                     ; 193.87 MHz ( period = 5.158 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.715 ns                ;
+; N/A                                     ; 193.91 MHz ( period = 5.157 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.714 ns                ;
+; N/A                                     ; 194.06 MHz ( period = 5.153 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[11] ; clock      ; clock    ; None                        ; None                      ; 4.710 ns                ;
+; N/A                                     ; 194.10 MHz ( period = 5.152 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[12] ; clock      ; clock    ; None                        ; None                      ; 4.709 ns                ;
+; N/A                                     ; 194.14 MHz ( period = 5.151 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.708 ns                ;
+; N/A                                     ; 194.25 MHz ( period = 5.148 ns )                    ; klok:cl|\deler:cnt[28] ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.705 ns                ;
+; N/A                                     ; 194.40 MHz ( period = 5.144 ns )                    ; klok:cl|\deler:cnt[10] ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.701 ns                ;
+; N/A                                     ; 194.51 MHz ( period = 5.141 ns )                    ; klok:cl|\deler:cnt[28] ; klok:cl|\deler:cnt[11] ; clock      ; clock    ; None                        ; None                      ; 4.698 ns                ;
+; N/A                                     ; 194.55 MHz ( period = 5.140 ns )                    ; klok:cl|\deler:cnt[28] ; klok:cl|\deler:cnt[12] ; clock      ; clock    ; None                        ; None                      ; 4.697 ns                ;
+; N/A                                     ; 194.86 MHz ( period = 5.132 ns )                    ; klok:cl|\deler:cnt[14] ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.689 ns                ;
+; N/A                                     ; 194.93 MHz ( period = 5.130 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.687 ns                ;
+; N/A                                     ; 195.16 MHz ( period = 5.124 ns )                    ; klok:cl|\deler:cnt[13] ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.681 ns                ;
+; N/A                                     ; 195.24 MHz ( period = 5.122 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.679 ns                ;
+; N/A                                     ; 195.27 MHz ( period = 5.121 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.678 ns                ;
+; N/A                                     ; 195.47 MHz ( period = 5.116 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.673 ns                ;
+; N/A                                     ; 195.54 MHz ( period = 5.114 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 4.671 ns                ;
+; N/A                                     ; 195.73 MHz ( period = 5.109 ns )                    ; klok:cl|\deler:cnt[9]  ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.666 ns                ;
+; N/A                                     ; 195.77 MHz ( period = 5.108 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.665 ns                ;
+; N/A                                     ; 196.04 MHz ( period = 5.101 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.658 ns                ;
+; N/A                                     ; 196.19 MHz ( period = 5.097 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.654 ns                ;
+; N/A                                     ; 196.23 MHz ( period = 5.096 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.653 ns                ;
+; N/A                                     ; 196.39 MHz ( period = 5.092 ns )                    ; klok:cl|\deler:cnt[9]  ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.649 ns                ;
+; N/A                                     ; 196.81 MHz ( period = 5.081 ns )                    ; klok:cl|\deler:cnt[9]  ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.638 ns                ;
+; N/A                                     ; 196.85 MHz ( period = 5.080 ns )                    ; klok:cl|\deler:cnt[10] ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.637 ns                ;
+; N/A                                     ; 197.32 MHz ( period = 5.068 ns )                    ; klok:cl|\deler:cnt[14] ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.625 ns                ;
+; N/A                                     ; 197.36 MHz ( period = 5.067 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 4.624 ns                ;
+; N/A                                     ; 197.63 MHz ( period = 5.060 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 4.617 ns                ;
+; N/A                                     ; 197.63 MHz ( period = 5.060 ns )                    ; klok:cl|\deler:cnt[13] ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.617 ns                ;
+; N/A                                     ; 197.67 MHz ( period = 5.059 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 4.616 ns                ;
+; N/A                                     ; 197.67 MHz ( period = 5.059 ns )                    ; klok:cl|\deler:cnt[9]  ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.616 ns                ;
+; N/A                                     ; 197.98 MHz ( period = 5.051 ns )                    ; klok:cl|\deler:cnt[15] ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 4.608 ns                ;
+; N/A                                     ; 198.02 MHz ( period = 5.050 ns )                    ; klok:cl|\deler:cnt[25] ; klok:cl|\deler:cnt[13] ; clock      ; clock    ; None                        ; None                      ; 4.607 ns                ;
+; N/A                                     ; 198.14 MHz ( period = 5.047 ns )                    ; klok:cl|\deler:cnt[25] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.604 ns                ;
+; N/A                                     ; 198.14 MHz ( period = 5.047 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.604 ns                ;
+; N/A                                     ; 198.26 MHz ( period = 5.044 ns )                    ; klok:cl|\deler:cnt[25] ; klok:cl|s_klok         ; clock      ; clock    ; None                        ; None                      ; 4.601 ns                ;
+; N/A                                     ; 198.53 MHz ( period = 5.037 ns )                    ; klok:cl|\deler:cnt[19] ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.594 ns                ;
+; N/A                                     ; 198.65 MHz ( period = 5.034 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[12] ; clock      ; clock    ; None                        ; None                      ; 4.591 ns                ;
+; N/A                                     ; 198.77 MHz ( period = 5.031 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.588 ns                ;
+; N/A                                     ; 199.04 MHz ( period = 5.024 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.581 ns                ;
+; N/A                                     ; 199.16 MHz ( period = 5.021 ns )                    ; klok:cl|\deler:cnt[9]  ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.578 ns                ;
+; N/A                                     ; 199.28 MHz ( period = 5.018 ns )                    ; klok:cl|\deler:cnt[10] ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.575 ns                ;
+; N/A                                     ; 199.48 MHz ( period = 5.013 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.570 ns                ;
+; N/A                                     ; 199.48 MHz ( period = 5.013 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 4.570 ns                ;
+; N/A                                     ; 199.52 MHz ( period = 5.012 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 4.569 ns                ;
+; N/A                                     ; 199.52 MHz ( period = 5.012 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[12] ; clock      ; clock    ; None                        ; None                      ; 4.569 ns                ;
+; N/A                                     ; 199.60 MHz ( period = 5.010 ns )                    ; klok:cl|\deler:cnt[10] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.567 ns                ;
+; N/A                                     ; 199.60 MHz ( period = 5.010 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[16] ; clock      ; clock    ; None                        ; None                      ; 4.567 ns                ;
+; N/A                                     ; 199.76 MHz ( period = 5.006 ns )                    ; klok:cl|\deler:cnt[14] ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.563 ns                ;
+; N/A                                     ; 200.08 MHz ( period = 4.998 ns )                    ; klok:cl|\deler:cnt[13] ; klok:cl|\deler:cnt[21] ; clock      ; clock    ; None                        ; None                      ; 4.555 ns                ;
+; N/A                                     ; 200.08 MHz ( period = 4.998 ns )                    ; klok:cl|\deler:cnt[14] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.555 ns                ;
+; N/A                                     ; 200.12 MHz ( period = 4.997 ns )                    ; klok:cl|\deler:cnt[12] ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 4.554 ns                ;
+; N/A                                     ; 200.16 MHz ( period = 4.996 ns )                    ; klok:cl|\deler:cnt[11] ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 4.553 ns                ;
+; N/A                                     ; 200.36 MHz ( period = 4.991 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.548 ns                ;
+; N/A                                     ; 200.40 MHz ( period = 4.990 ns )                    ; klok:cl|\deler:cnt[13] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.547 ns                ;
+; N/A                                     ; 200.88 MHz ( period = 4.978 ns )                    ; klok:cl|\deler:cnt[3]  ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 4.535 ns                ;
+; N/A                                     ; 201.01 MHz ( period = 4.975 ns )                    ; klok:cl|\deler:cnt[3]  ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 4.532 ns                ;
+; N/A                                     ; 201.49 MHz ( period = 4.963 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[20] ; clock      ; clock    ; None                        ; None                      ; 4.520 ns                ;
+; N/A                                     ; 201.53 MHz ( period = 4.962 ns )                    ; klok:cl|\deler:cnt[16] ; klok:cl|\deler:cnt[13] ; clock      ; clock    ; None                        ; None                      ; 4.519 ns                ;
+; N/A                                     ; 201.65 MHz ( period = 4.959 ns )                    ; klok:cl|\deler:cnt[16] ; klok:cl|\deler:cnt[19] ; clock      ; clock    ; None                        ; None                      ; 4.516 ns                ;
+; N/A                                     ; 201.65 MHz ( period = 4.959 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[11] ; clock      ; clock    ; None                        ; None                      ; 4.516 ns                ;
+; N/A                                     ; 201.73 MHz ( period = 4.957 ns )                    ; klok:cl|\deler:cnt[9]  ; klok:cl|\deler:cnt[17] ; clock      ; clock    ; None                        ; None                      ; 4.514 ns                ;
+; N/A                                     ; 201.78 MHz ( period = 4.956 ns )                    ; klok:cl|\deler:cnt[16] ; klok:cl|s_klok         ; clock      ; clock    ; None                        ; None                      ; 4.513 ns                ;
+; N/A                                     ; 201.86 MHz ( period = 4.954 ns )                    ; klok:cl|\deler:cnt[13] ; klok:cl|\deler:cnt[14] ; clock      ; clock    ; None                        ; None                      ; 4.511 ns                ;
+; N/A                                     ; 201.90 MHz ( period = 4.953 ns )                    ; klok:cl|\deler:cnt[4]  ; klok:cl|\deler:cnt[26] ; clock      ; clock    ; None                        ; None                      ; 4.510 ns                ;
+; N/A                                     ; 201.90 MHz ( period = 4.953 ns )                    ; klok:cl|\deler:cnt[17] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.510 ns                ;
+; N/A                                     ; 201.94 MHz ( period = 4.952 ns )                    ; klok:cl|\deler:cnt[30] ; klok:cl|\deler:cnt[0]  ; clock      ; clock    ; None                        ; None                      ; 4.509 ns                ;
+; N/A                                     ; 202.06 MHz ( period = 4.949 ns )                    ; klok:cl|\deler:cnt[10] ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.506 ns                ;
+; N/A                                     ; 202.14 MHz ( period = 4.947 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[24] ; clock      ; clock    ; None                        ; None                      ; 4.504 ns                ;
+; N/A                                     ; 202.35 MHz ( period = 4.942 ns )                    ; klok:cl|\deler:cnt[6]  ; klok:cl|\deler:cnt[15] ; clock      ; clock    ; None                        ; None                      ; 4.499 ns                ;
+; N/A                                     ; 202.43 MHz ( period = 4.940 ns )                    ; klok:cl|\deler:cnt[30] ; klok:cl|\deler:cnt[6]  ; clock      ; clock    ; None                        ; None                      ; 4.497 ns                ;
+; N/A                                     ; 202.55 MHz ( period = 4.937 ns )                    ; klok:cl|\deler:cnt[14] ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.494 ns                ;
+; N/A                                     ; 202.55 MHz ( period = 4.937 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[11] ; clock      ; clock    ; None                        ; None                      ; 4.494 ns                ;
+; N/A                                     ; 202.59 MHz ( period = 4.936 ns )                    ; klok:cl|\deler:cnt[16] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.493 ns                ;
+; N/A                                     ; 202.59 MHz ( period = 4.936 ns )                    ; klok:cl|\deler:cnt[17] ; klok:cl|\deler:cnt[23] ; clock      ; clock    ; None                        ; None                      ; 4.493 ns                ;
+; N/A                                     ; 202.63 MHz ( period = 4.935 ns )                    ; klok:cl|\deler:cnt[8]  ; klok:cl|\deler:cnt[12] ; clock      ; clock    ; None                        ; None                      ; 4.492 ns                ;
+; N/A                                     ; 202.88 MHz ( period = 4.929 ns )                    ; klok:cl|\deler:cnt[13] ; klok:cl|\deler:cnt[18] ; clock      ; clock    ; None                        ; None                      ; 4.486 ns                ;
+; N/A                                     ; 203.05 MHz ( period = 4.925 ns )                    ; klok:cl|\deler:cnt[17] ; klok:cl|\deler:cnt[25] ; clock      ; clock    ; None                        ; None                      ; 4.482 ns                ;
+; N/A                                     ; 203.13 MHz ( period = 4.923 ns )                    ; klok:cl|\deler:cnt[18] ; klok:cl|\deler:cnt[22] ; clock      ; clock    ; None                        ; None                      ; 4.480 ns                ;
+; N/A                                     ; 203.25 MHz ( period = 4.920 ns )                    ; klok:cl|\deler:cnt[7]  ; klok:cl|\deler:cnt[15] ; clock      ; clock    ; None                        ; None                      ; 4.477 ns                ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                        ;                        ;            ;          ;                             ;                           ;                         ;
++-----------------------------------------+-----------------------------------------------------+------------------------+------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++-----------------------------------------------------------------------+
+; tsu                                                                   ;
++-------+--------------+------------+-------+----------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From  ; To             ; To Clock ;
++-------+--------------+------------+-------+----------------+----------+
+; N/A   ; None         ; 1.951 ns   ; clear ; klok:cl|s_klok ; clock    ;
++-------+--------------+------------+-------+----------------+----------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                            ;
++-------+--------------+------------+-------------------------------------------+-------------------+------------+
+; Slack ; Required tco ; Actual tco ; From                                      ; To                ; From Clock ;
++-------+--------------+------------+-------------------------------------------+-------------------+------------+
+; N/A   ; None         ; 11.380 ns  ; knipperen:Knop55|tienteller:teller|teller ; voerman_alpha     ; clock      ;
+; N/A   ; None         ; 11.287 ns  ; knipperen:Knop53|tienteller:teller|teller ; voerman_alpha     ; clock      ;
+; N/A   ; None         ; 11.229 ns  ; knipperen:Knop51|tienteller:teller|teller ; pegasus           ; clock      ;
+; N/A   ; None         ; 11.167 ns  ; knipperen:Knop52|tienteller:teller|teller ; ossehoeder        ; clock      ;
+; N/A   ; None         ; 11.121 ns  ; knipperen:Knop53|tienteller:teller|teller ; perseus           ; clock      ;
+; N/A   ; None         ; 11.072 ns  ; knipperen:Knop53|tienteller:teller|teller ; stier_alpha       ; clock      ;
+; N/A   ; None         ; 11.027 ns  ; knipperen:Knop53|tienteller:teller|teller ; rivier            ; clock      ;
+; N/A   ; None         ; 10.995 ns  ; branden:Knop27|tienteller:teller|teller   ; voerman_alpha     ; clock      ;
+; N/A   ; None         ; 10.971 ns  ; knipperen:Knop54|tienteller:teller|teller ; schorpioen        ; clock      ;
+; N/A   ; None         ; 10.947 ns  ; knipperen:Knop52|tienteller:teller|teller ; waterslang        ; clock      ;
+; N/A   ; None         ; 10.946 ns  ; knipperen:Knop53|tienteller:teller|teller ; kleine_hond_alpha ; clock      ;
+; N/A   ; None         ; 10.933 ns  ; knipperen:Knop52|tienteller:teller|teller ; maagd             ; clock      ;
+; N/A   ; None         ; 10.932 ns  ; knipperen:Knop52|tienteller:teller|teller ; raaf              ; clock      ;
+; N/A   ; None         ; 10.924 ns  ; knipperen:Knop55|tienteller:teller|teller ; tweelingen_alpha  ; clock      ;
+; N/A   ; None         ; 10.902 ns  ; branden:Knop44|tienteller:teller|teller   ; zwaan_alpha       ; clock      ;
+; N/A   ; None         ; 10.894 ns  ; knipperen:Knop55|tienteller:teller|teller ; orion_beta        ; clock      ;
+; N/A   ; None         ; 10.882 ns  ; knipperen:Knop51|tienteller:teller|teller ; driehoek          ; clock      ;
+; N/A   ; None         ; 10.857 ns  ; knipperen:Knop26|tienteller:teller|teller ; perseus_cluster   ; clock      ;
+; N/A   ; None         ; 10.831 ns  ; knipperen:Knop51|tienteller:teller|teller ; waterman          ; clock      ;
+; N/A   ; None         ; 10.829 ns  ; knipperen:Knop53|tienteller:teller|teller ; tweelingen_alpha  ; clock      ;
+; N/A   ; None         ; 10.777 ns  ; knipperen:Knop53|tienteller:teller|teller ; orion_beta        ; clock      ;
+; N/A   ; None         ; 10.765 ns  ; knipperen:Knop52|tienteller:teller|teller ; weegschaal        ; clock      ;
+; N/A   ; None         ; 10.762 ns  ; knipperen:Knop53|tienteller:teller|teller ; orion             ; clock      ;
+; N/A   ; None         ; 10.721 ns  ; knipperen:Knop54|tienteller:teller|teller ; boogschutter      ; clock      ;
+; N/A   ; None         ; 10.665 ns  ; knipperen:Knop54|tienteller:teller|teller ; dolfijn           ; clock      ;
+; N/A   ; None         ; 10.627 ns  ; knipperen:Knop55|tienteller:teller|teller ; kleine_hond_alpha ; clock      ;
+; N/A   ; None         ; 10.617 ns  ; knipperen:Knop54|tienteller:teller|teller ; steenbok          ; clock      ;
+; N/A   ; None         ; 10.597 ns  ; branden:Knop47|tienteller:teller|teller   ; arend_alpha       ; clock      ;
+; N/A   ; None         ; 10.589 ns  ; knipperen:Knop50|tienteller:teller|teller ; grote_beer        ; clock      ;
+; N/A   ; None         ; 10.576 ns  ; knipperen:Knop52|tienteller:teller|teller ; slang             ; clock      ;
+; N/A   ; None         ; 10.565 ns  ; branden:Knop42|tienteller:teller|teller   ; schorpioen        ; clock      ;
+; N/A   ; None         ; 10.537 ns  ; branden:Knop28|tienteller:teller|teller   ; stier_alpha       ; clock      ;
+; N/A   ; None         ; 10.533 ns  ; knipperen:Knop53|tienteller:teller|teller ; voerman           ; clock      ;
+; N/A   ; None         ; 10.502 ns  ; branden:Knop9|tienteller:teller|teller    ; pegasus           ; clock      ;
+; N/A   ; None         ; 10.483 ns  ; knipperen:Knop51|tienteller:teller|teller ; walvis            ; clock      ;
+; N/A   ; None         ; 10.473 ns  ; knipperen:Knop56|tienteller:teller|teller ; arend_alpha       ; clock      ;
+; N/A   ; None         ; 10.470 ns  ; knipperen:Knop53|tienteller:teller|teller ; grote_hond_alpha  ; clock      ;
+; N/A   ; None         ; 10.443 ns  ; klok:cl|s_klok                            ; rivier            ; clock      ;
+; N/A   ; None         ; 10.441 ns  ; knipperen:Knop53|tienteller:teller|teller ; kreeft            ; clock      ;
+; N/A   ; None         ; 10.431 ns  ; knipperen:Knop53|tienteller:teller|teller ; haas              ; clock      ;
+; N/A   ; None         ; 10.425 ns  ; branden:Knop25|tienteller:teller|teller   ; perseus           ; clock      ;
+; N/A   ; None         ; 10.421 ns  ; knipperen:Knop40|tienteller:teller|teller ; hercules_M13      ; clock      ;
+; N/A   ; None         ; 10.399 ns  ; knipperen:Knop52|tienteller:teller|teller ; noorderkroon      ; clock      ;
+; N/A   ; None         ; 10.382 ns  ; knipperen:Knop53|tienteller:teller|teller ; kleine_hond       ; clock      ;
+; N/A   ; None         ; 10.380 ns  ; knipperen:Knop53|tienteller:teller|teller ; stier             ; clock      ;
+; N/A   ; None         ; 10.379 ns  ; branden:Knop19|tienteller:teller|teller   ; raaf              ; clock      ;
+; N/A   ; None         ; 10.379 ns  ; knipperen:Knop52|tienteller:teller|teller ; leeuw             ; clock      ;
+; N/A   ; None         ; 10.354 ns  ; knipperen:Knop54|tienteller:teller|teller ; slangendrager     ; clock      ;
+; N/A   ; None         ; 10.330 ns  ; branden:Knop44|tienteller:teller|teller   ; zwaan             ; clock      ;
+; N/A   ; None         ; 10.306 ns  ; branden:Knop47|tienteller:teller|teller   ; arend             ; clock      ;
+; N/A   ; None         ; 10.288 ns  ; branden:Knop20|tienteller:teller|teller   ; waterslang        ; clock      ;
+; N/A   ; None         ; 10.280 ns  ; knipperen:Knop54|tienteller:teller|teller ; arend_alpha       ; clock      ;
+; N/A   ; None         ; 10.280 ns  ; knipperen:Knop54|tienteller:teller|teller ; pijl              ; clock      ;
+; N/A   ; None         ; 10.280 ns  ; branden:Knop18|tienteller:teller|teller   ; maagd             ; clock      ;
+; N/A   ; None         ; 10.269 ns  ; knipperen:Knop50|tienteller:teller|teller ; kleine_beer       ; clock      ;
+; N/A   ; None         ; 10.246 ns  ; knipperen:Knop55|tienteller:teller|teller ; stier_alpha       ; clock      ;
+; N/A   ; None         ; 10.244 ns  ; klok:cl|s_klok                            ; maagd             ; clock      ;
+; N/A   ; None         ; 10.241 ns  ; branden:Knop27|tienteller:teller|teller   ; voerman           ; clock      ;
+; N/A   ; None         ; 10.220 ns  ; knipperen:Knop53|tienteller:teller|teller ; grote_hond        ; clock      ;
+; N/A   ; None         ; 10.220 ns  ; knipperen:Knop50|tienteller:teller|teller ; cassiopeia        ; clock      ;
+; N/A   ; None         ; 10.219 ns  ; knipperen:Knop51|tienteller:teller|teller ; andromeda         ; clock      ;
+; N/A   ; None         ; 10.207 ns  ; knipperen:Knop53|tienteller:teller|teller ; tweelingen        ; clock      ;
+; N/A   ; None         ; 10.206 ns  ; klok:cl|s_klok                            ; arend_alpha       ; clock      ;
+; N/A   ; None         ; 10.204 ns  ; knipperen:Knop54|tienteller:teller|teller ; hercules          ; clock      ;
+; N/A   ; None         ; 10.182 ns  ; klok:cl|s_klok                            ; zwaan_alpha       ; clock      ;
+; N/A   ; None         ; 10.182 ns  ; branden:Knop36|tienteller:teller|teller   ; tweelingen_alpha  ; clock      ;
+; N/A   ; None         ; 10.181 ns  ; klok:cl|s_klok                            ; pijl              ; clock      ;
+; N/A   ; None         ; 10.180 ns  ; knipperen:Knop56|tienteller:teller|teller ; zwaan_alpha       ; clock      ;
+; N/A   ; None         ; 10.155 ns  ; knipperen:Knop50|tienteller:teller|teller ; poolster          ; clock      ;
+; N/A   ; None         ; 10.145 ns  ; klok:cl|s_klok                            ; waterslang        ; clock      ;
+; N/A   ; None         ; 10.141 ns  ; knipperen:Knop54|tienteller:teller|teller ; zwaan_alpha       ; clock      ;
+; N/A   ; None         ; 10.124 ns  ; knipperen:Knop50|tienteller:teller|teller ; draak             ; clock      ;
+; N/A   ; None         ; 10.120 ns  ; knipperen:Knop53|tienteller:teller|teller ; stier_beta        ; clock      ;
+; N/A   ; None         ; 10.107 ns  ; klok:cl|s_klok                            ; hercules          ; clock      ;
+; N/A   ; None         ; 10.083 ns  ; branden:Knop22|tienteller:teller|teller   ; ossehoeder        ; clock      ;
+; N/A   ; None         ; 10.038 ns  ; knipperen:Knop52|tienteller:teller|teller ; jachthonden       ; clock      ;
+; N/A   ; None         ; 10.013 ns  ; branden:Knop35|tienteller:teller|teller   ; kleine_hond_alpha ; clock      ;
+; N/A   ; None         ; 9.998 ns   ; branden:Knop33|tienteller:teller|teller   ; rivier            ; clock      ;
+; N/A   ; None         ; 9.989 ns   ; knipperen:Knop54|tienteller:teller|teller ; arend             ; clock      ;
+; N/A   ; None         ; 9.967 ns   ; branden:Knop14|tienteller:teller|teller   ; waterman          ; clock      ;
+; N/A   ; None         ; 9.960 ns   ; knipperen:Knop50|tienteller:teller|teller ; cepheus           ; clock      ;
+; N/A   ; None         ; 9.949 ns   ; klok:cl|s_klok                            ; raaf              ; clock      ;
+; N/A   ; None         ; 9.928 ns   ; klok:cl|s_klok                            ; waterman          ; clock      ;
+; N/A   ; None         ; 9.916 ns   ; branden:Knop23|tienteller:teller|teller   ; noorderkroon      ; clock      ;
+; N/A   ; None         ; 9.915 ns   ; klok:cl|s_klok                            ; arend             ; clock      ;
+; N/A   ; None         ; 9.914 ns   ; klok:cl|s_klok                            ; voerman_alpha     ; clock      ;
+; N/A   ; None         ; 9.901 ns   ; branden:Knop49|tienteller:teller|teller   ; steenbok          ; clock      ;
+; N/A   ; None         ; 9.880 ns   ; klok:cl|s_klok                            ; grote_beer        ; clock      ;
+; N/A   ; None         ; 9.861 ns   ; knipperen:Knop51|tienteller:teller|teller ; andromeda_alpha   ; clock      ;
+; N/A   ; None         ; 9.845 ns   ; branden:Knop28|tienteller:teller|teller   ; stier             ; clock      ;
+; N/A   ; None         ; 9.816 ns   ; klok:cl|s_klok                            ; slang             ; clock      ;
+; N/A   ; None         ; 9.814 ns   ; knipperen:Knop56|tienteller:teller|teller ; lier_alpha        ; clock      ;
+; N/A   ; None         ; 9.811 ns   ; klok:cl|s_klok                            ; leeuw             ; clock      ;
+; N/A   ; None         ; 9.787 ns   ; klok:cl|s_klok                            ; schorpioen        ; clock      ;
+; N/A   ; None         ; 9.786 ns   ; klok:cl|s_klok                            ; perseus_cluster   ; clock      ;
+; N/A   ; None         ; 9.747 ns   ; branden:Knop37|tienteller:teller|teller   ; kreeft            ; clock      ;
+; N/A   ; None         ; 9.728 ns   ; branden:Knop2|tienteller:teller|teller    ; cepheus           ; clock      ;
+; N/A   ; None         ; 9.717 ns   ; branden:Knop24|tienteller:teller|teller   ; slang             ; clock      ;
+; N/A   ; None         ; 9.692 ns   ; knipperen:Knop29|tienteller:teller|teller ; stier_pleiaden    ; clock      ;
+; N/A   ; None         ; 9.684 ns   ; branden:Knop21|tienteller:teller|teller   ; weegschaal        ; clock      ;
+; N/A   ; None         ; 9.666 ns   ; branden:Knop7|tienteller:teller|teller    ; andromeda         ; clock      ;
+; N/A   ; None         ; 9.661 ns   ; klok:cl|s_klok                            ; cassiopeia        ; clock      ;
+; N/A   ; None         ; 9.658 ns   ; branden:Knop39|tienteller:teller|teller   ; hercules          ; clock      ;
+; N/A   ; None         ; 9.654 ns   ; knipperen:Knop8|tienteller:teller|teller  ; andromedanevel    ; clock      ;
+; N/A   ; None         ; 9.652 ns   ; klok:cl|s_klok                            ; tweelingen_alpha  ; clock      ;
+; N/A   ; None         ; 9.647 ns   ; branden:Knop16|tienteller:teller|teller   ; jachthonden       ; clock      ;
+; N/A   ; None         ; 9.640 ns   ; klok:cl|s_klok                            ; orion_beta        ; clock      ;
+; N/A   ; None         ; 9.635 ns   ; branden:Knop17|tienteller:teller|teller   ; leeuw             ; clock      ;
+; N/A   ; None         ; 9.625 ns   ; klok:cl|s_klok                            ; orion             ; clock      ;
+; N/A   ; None         ; 9.614 ns   ; branden:Knop13|tienteller:teller|teller   ; walvis            ; clock      ;
+; N/A   ; None         ; 9.610 ns   ; klok:cl|s_klok                            ; zwaan             ; clock      ;
+; N/A   ; None         ; 9.607 ns   ; knipperen:Knop38|tienteller:teller|teller ; krib              ; clock      ;
+; N/A   ; None         ; 9.603 ns   ; branden:Knop43|tienteller:teller|teller   ; lier_alpha        ; clock      ;
+; N/A   ; None         ; 9.585 ns   ; branden:Knop28|tienteller:teller|teller   ; stier_beta        ; clock      ;
+; N/A   ; None         ; 9.580 ns   ; klok:cl|s_klok                            ; poolster          ; clock      ;
+; N/A   ; None         ; 9.578 ns   ; klok:cl|s_klok                            ; walvis            ; clock      ;
+; N/A   ; None         ; 9.578 ns   ; klok:cl|s_klok                            ; pegasus           ; clock      ;
+; N/A   ; None         ; 9.572 ns   ; branden:Knop48|tienteller:teller|teller   ; boogschutter      ; clock      ;
+; N/A   ; None         ; 9.569 ns   ; knipperen:Knop54|tienteller:teller|teller ; zwaan             ; clock      ;
+; N/A   ; None         ; 9.567 ns   ; klok:cl|s_klok                            ; draak             ; clock      ;
+; N/A   ; None         ; 9.564 ns   ; klok:cl|s_klok                            ; steenbok          ; clock      ;
+; N/A   ; None         ; 9.560 ns   ; branden:Knop36|tienteller:teller|teller   ; tweelingen        ; clock      ;
+; N/A   ; None         ; 9.549 ns   ; branden:Knop6|tienteller:teller|teller    ; poolster          ; clock      ;
+; N/A   ; None         ; 9.535 ns   ; klok:cl|s_klok                            ; lier_alpha        ; clock      ;
+; N/A   ; None         ; 9.517 ns   ; branden:Knop30|tienteller:teller|teller   ; orion_beta        ; clock      ;
+; N/A   ; None         ; 9.515 ns   ; branden:Knop41|tienteller:teller|teller   ; slangendrager     ; clock      ;
+; N/A   ; None         ; 9.515 ns   ; branden:Knop34|tienteller:teller|teller   ; grote_hond_alpha  ; clock      ;
+; N/A   ; None         ; 9.509 ns   ; klok:cl|s_klok                            ; hercules_M13      ; clock      ;
+; N/A   ; None         ; 9.507 ns   ; knipperen:Knop54|tienteller:teller|teller ; lier_alpha        ; clock      ;
+; N/A   ; None         ; 9.502 ns   ; branden:Knop30|tienteller:teller|teller   ; orion             ; clock      ;
+; N/A   ; None         ; 9.482 ns   ; knipperen:Knop51|tienteller:teller|teller ; ram               ; clock      ;
+; N/A   ; None         ; 9.480 ns   ; klok:cl|s_klok                            ; stier_pleiaden    ; clock      ;
+; N/A   ; None         ; 9.479 ns   ; knipperen:Knop51|tienteller:teller|teller ; vissen            ; clock      ;
+; N/A   ; None         ; 9.478 ns   ; klok:cl|s_klok                            ; cepheus           ; clock      ;
+; N/A   ; None         ; 9.455 ns   ; branden:Knop1|tienteller:teller|teller    ; cassiopeia        ; clock      ;
+; N/A   ; None         ; 9.449 ns   ; branden:Knop35|tienteller:teller|teller   ; kleine_hond       ; clock      ;
+; N/A   ; None         ; 9.447 ns   ; branden:Knop32|tienteller:teller|teller   ; haas              ; clock      ;
+; N/A   ; None         ; 9.409 ns   ; branden:Knop45|tienteller:teller|teller   ; pijl              ; clock      ;
+; N/A   ; None         ; 9.388 ns   ; klok:cl|s_klok                            ; kleine_hond_alpha ; clock      ;
+; N/A   ; None         ; 9.373 ns   ; klok:cl|s_klok                            ; krib              ; clock      ;
+; N/A   ; None         ; 9.366 ns   ; knipperen:Knop31|tienteller:teller|teller ; orionnevel        ; clock      ;
+; N/A   ; None         ; 9.365 ns   ; branden:Knop43|tienteller:teller|teller   ; lier              ; clock      ;
+; N/A   ; None         ; 9.362 ns   ; klok:cl|s_klok                            ; slangendrager     ; clock      ;
+; N/A   ; None         ; 9.352 ns   ; klok:cl|s_klok                            ; andromedanevel    ; clock      ;
+; N/A   ; None         ; 9.341 ns   ; branden:Knop4|tienteller:teller|teller    ; grote_beer        ; clock      ;
+; N/A   ; None         ; 9.321 ns   ; klok:cl|s_klok                            ; noorderkroon      ; clock      ;
+; N/A   ; None         ; 9.308 ns   ; branden:Knop7|tienteller:teller|teller    ; andromeda_alpha   ; clock      ;
+; N/A   ; None         ; 9.303 ns   ; knipperen:Knop55|tienteller:teller|teller ; grote_hond_alpha  ; clock      ;
+; N/A   ; None         ; 9.297 ns   ; klok:cl|s_klok                            ; lier              ; clock      ;
+; N/A   ; None         ; 9.292 ns   ; branden:Knop10|tienteller:teller|teller   ; driehoek          ; clock      ;
+; N/A   ; None         ; 9.280 ns   ; klok:cl|s_klok                            ; kleine_beer       ; clock      ;
+; N/A   ; None         ; 9.269 ns   ; knipperen:Knop54|tienteller:teller|teller ; lier              ; clock      ;
+; N/A   ; None         ; 9.265 ns   ; branden:Knop34|tienteller:teller|teller   ; grote_hond        ; clock      ;
+; N/A   ; None         ; 9.263 ns   ; klok:cl|s_klok                            ; jachthonden       ; clock      ;
+; N/A   ; None         ; 9.263 ns   ; branden:Knop3|tienteller:teller|teller    ; draak             ; clock      ;
+; N/A   ; None         ; 9.250 ns   ; klok:cl|s_klok                            ; andromeda         ; clock      ;
+; N/A   ; None         ; 9.218 ns   ; klok:cl|s_klok                            ; perseus           ; clock      ;
+; N/A   ; None         ; 9.160 ns   ; klok:cl|s_klok                            ; voerman           ; clock      ;
+; N/A   ; None         ; 9.134 ns   ; branden:Knop46|tienteller:teller|teller   ; dolfijn           ; clock      ;
+; N/A   ; None         ; 9.110 ns   ; klok:cl|s_klok                            ; stier_alpha       ; clock      ;
+; N/A   ; None         ; 9.047 ns   ; branden:Knop5|tienteller:teller|teller    ; kleine_beer       ; clock      ;
+; N/A   ; None         ; 9.030 ns   ; klok:cl|s_klok                            ; tweelingen        ; clock      ;
+; N/A   ; None         ; 9.024 ns   ; klok:cl|s_klok                            ; dolfijn           ; clock      ;
+; N/A   ; None         ; 8.898 ns   ; klok:cl|s_klok                            ; orionnevel        ; clock      ;
+; N/A   ; None         ; 8.892 ns   ; klok:cl|s_klok                            ; andromeda_alpha   ; clock      ;
+; N/A   ; None         ; 8.824 ns   ; klok:cl|s_klok                            ; kleine_hond       ; clock      ;
+; N/A   ; None         ; 8.797 ns   ; klok:cl|s_klok                            ; driehoek          ; clock      ;
+; N/A   ; None         ; 8.584 ns   ; branden:Knop11|tienteller:teller|teller   ; ram               ; clock      ;
+; N/A   ; None         ; 8.537 ns   ; klok:cl|s_klok                            ; kreeft            ; clock      ;
+; N/A   ; None         ; 8.534 ns   ; klok:cl|s_klok                            ; boogschutter      ; clock      ;
+; N/A   ; None         ; 8.471 ns   ; klok:cl|s_klok                            ; ossehoeder        ; clock      ;
+; N/A   ; None         ; 8.468 ns   ; klok:cl|s_klok                            ; haas              ; clock      ;
+; N/A   ; None         ; 8.418 ns   ; klok:cl|s_klok                            ; stier             ; clock      ;
+; N/A   ; None         ; 8.336 ns   ; branden:Knop12|tienteller:teller|teller   ; vissen            ; clock      ;
+; N/A   ; None         ; 8.315 ns   ; klok:cl|s_klok                            ; ram               ; clock      ;
+; N/A   ; None         ; 8.311 ns   ; klok:cl|s_klok                            ; vissen            ; clock      ;
+; N/A   ; None         ; 8.175 ns   ; klok:cl|s_klok                            ; grote_hond_alpha  ; clock      ;
+; N/A   ; None         ; 8.158 ns   ; klok:cl|s_klok                            ; stier_beta        ; clock      ;
+; N/A   ; None         ; 8.068 ns   ; klok:cl|s_klok                            ; weegschaal        ; clock      ;
+; N/A   ; None         ; 7.925 ns   ; klok:cl|s_klok                            ; grote_hond        ; clock      ;
++-------+--------------+------------+-------------------------------------------+-------------------+------------+
+
+
++-------------------------------------------------------------------------+
+; tpd                                                                     ;
++-------+-------------------+-----------------+-------+-------------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To                ;
++-------+-------------------+-----------------+-------+-------------------+
+; N/A   ; None              ; 6.608 ns        ; clear ; voerman_alpha     ;
+; N/A   ; None              ; 6.548 ns        ; clear ; pegasus           ;
+; N/A   ; None              ; 6.535 ns        ; clear ; perseus_cluster   ;
+; N/A   ; None              ; 6.505 ns        ; clear ; perseus           ;
+; N/A   ; None              ; 6.445 ns        ; clear ; waterslang        ;
+; N/A   ; None              ; 6.443 ns        ; clear ; schorpioen        ;
+; N/A   ; None              ; 6.437 ns        ; clear ; arend_alpha       ;
+; N/A   ; None              ; 6.431 ns        ; clear ; raaf              ;
+; N/A   ; None              ; 6.395 ns        ; clear ; maagd             ;
+; N/A   ; None              ; 6.373 ns        ; clear ; stier_alpha       ;
+; N/A   ; None              ; 6.274 ns        ; clear ; steenbok          ;
+; N/A   ; None              ; 6.249 ns        ; clear ; hercules_M13      ;
+; N/A   ; None              ; 6.238 ns        ; clear ; ossehoeder        ;
+; N/A   ; None              ; 6.236 ns        ; clear ; tweelingen_alpha  ;
+; N/A   ; None              ; 6.190 ns        ; clear ; zwaan_alpha       ;
+; N/A   ; None              ; 6.146 ns        ; clear ; arend             ;
+; N/A   ; None              ; 6.071 ns        ; clear ; jachthonden       ;
+; N/A   ; None              ; 6.060 ns        ; clear ; krib              ;
+; N/A   ; None              ; 6.046 ns        ; clear ; cassiopeia        ;
+; N/A   ; None              ; 6.040 ns        ; clear ; boogschutter      ;
+; N/A   ; None              ; 6.039 ns        ; clear ; rivier            ;
+; N/A   ; None              ; 6.037 ns        ; clear ; kleine_hond_alpha ;
+; N/A   ; None              ; 5.866 ns        ; clear ; grote_hond_alpha  ;
+; N/A   ; None              ; 5.844 ns        ; clear ; noorderkroon      ;
+; N/A   ; None              ; 5.841 ns        ; clear ; voerman           ;
+; N/A   ; None              ; 5.840 ns        ; clear ; leeuw             ;
+; N/A   ; None              ; 5.836 ns        ; clear ; weegschaal        ;
+; N/A   ; None              ; 5.824 ns        ; clear ; kreeft            ;
+; N/A   ; None              ; 5.799 ns        ; clear ; waterman          ;
+; N/A   ; None              ; 5.774 ns        ; clear ; cepheus           ;
+; N/A   ; None              ; 5.767 ns        ; clear ; driehoek          ;
+; N/A   ; None              ; 5.731 ns        ; clear ; stier_pleiaden    ;
+; N/A   ; None              ; 5.681 ns        ; clear ; stier             ;
+; N/A   ; None              ; 5.618 ns        ; clear ; zwaan             ;
+; N/A   ; None              ; 5.616 ns        ; clear ; grote_hond        ;
+; N/A   ; None              ; 5.594 ns        ; clear ; hercules          ;
+; N/A   ; None              ; 5.577 ns        ; clear ; orion_beta        ;
+; N/A   ; None              ; 5.569 ns        ; clear ; lier_alpha        ;
+; N/A   ; None              ; 5.563 ns        ; clear ; slang             ;
+; N/A   ; None              ; 5.562 ns        ; clear ; orion             ;
+; N/A   ; None              ; 5.543 ns        ; clear ; slangendrager     ;
+; N/A   ; None              ; 5.535 ns        ; clear ; pijl              ;
+; N/A   ; None              ; 5.516 ns        ; clear ; tweelingen        ;
+; N/A   ; None              ; 5.506 ns        ; clear ; andromedanevel    ;
+; N/A   ; None              ; 5.473 ns        ; clear ; kleine_hond       ;
+; N/A   ; None              ; 5.472 ns        ; clear ; haas              ;
+; N/A   ; None              ; 5.467 ns        ; clear ; andromeda         ;
+; N/A   ; None              ; 5.440 ns        ; clear ; walvis            ;
+; N/A   ; None              ; 5.421 ns        ; clear ; stier_beta        ;
+; N/A   ; None              ; 5.399 ns        ; clear ; orionnevel        ;
+; N/A   ; None              ; 5.383 ns        ; clear ; grote_beer        ;
+; N/A   ; None              ; 5.379 ns        ; clear ; poolster          ;
+; N/A   ; None              ; 5.309 ns        ; clear ; lier              ;
+; N/A   ; None              ; 5.233 ns        ; clear ; kleine_beer       ;
+; N/A   ; None              ; 5.193 ns        ; clear ; dolfijn           ;
+; N/A   ; None              ; 5.109 ns        ; clear ; andromeda_alpha   ;
+; N/A   ; None              ; 5.092 ns        ; clear ; draak             ;
+; N/A   ; None              ; 4.828 ns        ; clear ; ram               ;
+; N/A   ; None              ; 4.824 ns        ; clear ; vissen            ;
++-------+-------------------+-----------------+-------+-------------------+
+
+
++-----------------------------------------------------------------------------+
+; th                                                                          ;
++---------------+-------------+-----------+-------+----------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From  ; To             ; To Clock ;
++---------------+-------------+-----------+-------+----------------+----------+
+; N/A           ; None        ; -1.605 ns ; clear ; klok:cl|s_klok ; clock    ;
++---------------+-------------+-----------+-------+----------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri May 22 12:13:17 2009
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off verlichting -c verlichting
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clock" is an undefined clock
+Warning: Found 1 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "klok:cl|s_klok" as buffer
+Info: Clock "clock" has Internal fmax of 167.53 MHz between source register "klok:cl|\deler:cnt[1]" and destination register "klok:cl|\deler:cnt[6]" (period= 5.969 ns)
+    Info: + Longest register to register delay is 5.526 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X12_Y4_N2; Fanout = 4; REG Node = 'klok:cl|\deler:cnt[1]'
+        Info: 2: + IC(0.792 ns) + CELL(0.571 ns) = 1.363 ns; Loc. = LC_X12_Y4_N3; Fanout = 1; COMB Node = 'klok:cl|Equal0~360'
+        Info: 3: + IC(1.513 ns) + CELL(0.319 ns) = 3.195 ns; Loc. = LC_X14_Y3_N0; Fanout = 14; COMB Node = 'klok:cl|Equal0~361'
+        Info: 4: + IC(1.962 ns) + CELL(0.369 ns) = 5.526 ns; Loc. = LC_X11_Y4_N2; Fanout = 4; REG Node = 'klok:cl|\deler:cnt[6]'
+        Info: Total cell delay = 1.259 ns ( 22.78 % )
+        Info: Total interconnect delay = 4.267 ns ( 77.22 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "clock" to destination register is 2.472 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.727 ns) = 0.727 ns; Loc. = PIN_J6; Fanout = 33; CLK Node = 'clock'
+            Info: 2: + IC(1.171 ns) + CELL(0.574 ns) = 2.472 ns; Loc. = LC_X11_Y4_N2; Fanout = 4; REG Node = 'klok:cl|\deler:cnt[6]'
+            Info: Total cell delay = 1.301 ns ( 52.63 % )
+            Info: Total interconnect delay = 1.171 ns ( 47.37 % )
+        Info: - Longest clock path from clock "clock" to source register is 2.472 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.727 ns) = 0.727 ns; Loc. = PIN_J6; Fanout = 33; CLK Node = 'clock'
+            Info: 2: + IC(1.171 ns) + CELL(0.574 ns) = 2.472 ns; Loc. = LC_X12_Y4_N2; Fanout = 4; REG Node = 'klok:cl|\deler:cnt[1]'
+            Info: Total cell delay = 1.301 ns ( 52.63 % )
+            Info: Total interconnect delay = 1.171 ns ( 47.37 % )
+    Info: + Micro clock to output delay of source is 0.235 ns
+    Info: + Micro setup delay of destination is 0.208 ns
+Info: tsu for register "klok:cl|s_klok" (data pin = "clear", clock pin = "clock") is 1.951 ns
+    Info: + Longest pin to register delay is 4.215 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.727 ns) = 0.727 ns; Loc. = PIN_K6; Fanout = 90; PIN Node = 'clear'
+        Info: 2: + IC(3.119 ns) + CELL(0.369 ns) = 4.215 ns; Loc. = LC_X14_Y3_N6; Fanout = 333; REG Node = 'klok:cl|s_klok'
+        Info: Total cell delay = 1.096 ns ( 26.00 % )
+        Info: Total interconnect delay = 3.119 ns ( 74.00 % )
+    Info: + Micro setup delay of destination is 0.208 ns
+    Info: - Shortest clock path from clock "clock" to destination register is 2.472 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.727 ns) = 0.727 ns; Loc. = PIN_J6; Fanout = 33; CLK Node = 'clock'
+        Info: 2: + IC(1.171 ns) + CELL(0.574 ns) = 2.472 ns; Loc. = LC_X14_Y3_N6; Fanout = 333; REG Node = 'klok:cl|s_klok'
+        Info: Total cell delay = 1.301 ns ( 52.63 % )
+        Info: Total interconnect delay = 1.171 ns ( 47.37 % )
+Info: tco from clock "clock" to destination pin "voerman_alpha" through register "knipperen:Knop55|tienteller:teller|teller" is 11.380 ns
+    Info: + Longest clock path from clock "clock" to source register is 5.316 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.727 ns) = 0.727 ns; Loc. = PIN_J6; Fanout = 33; CLK Node = 'clock'
+        Info: 2: + IC(1.171 ns) + CELL(0.809 ns) = 2.707 ns; Loc. = LC_X14_Y3_N6; Fanout = 333; REG Node = 'klok:cl|s_klok'
+        Info: 3: + IC(2.035 ns) + CELL(0.574 ns) = 5.316 ns; Loc. = LC_X14_Y10_N0; Fanout = 7; REG Node = 'knipperen:Knop55|tienteller:teller|teller'
+        Info: Total cell delay = 2.110 ns ( 39.69 % )
+        Info: Total interconnect delay = 3.206 ns ( 60.31 % )
+    Info: + Micro clock to output delay of source is 0.235 ns
+    Info: + Longest register to pin delay is 5.829 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X14_Y10_N0; Fanout = 7; REG Node = 'knipperen:Knop55|tienteller:teller|teller'
+        Info: 2: + IC(1.790 ns) + CELL(0.319 ns) = 2.109 ns; Loc. = LC_X12_Y12_N9; Fanout = 1; COMB Node = 'voerman_alpha~0'
+        Info: 3: + IC(2.266 ns) + CELL(1.454 ns) = 5.829 ns; Loc. = PIN_H4; Fanout = 0; PIN Node = 'voerman_alpha'
+        Info: Total cell delay = 1.773 ns ( 30.42 % )
+        Info: Total interconnect delay = 4.056 ns ( 69.58 % )
+Info: Longest tpd from source pin "clear" to destination pin "voerman_alpha" is 6.608 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.727 ns) = 0.727 ns; Loc. = PIN_K6; Fanout = 90; PIN Node = 'clear'
+    Info: 2: + IC(1.699 ns) + CELL(0.462 ns) = 2.888 ns; Loc. = LC_X12_Y12_N9; Fanout = 1; COMB Node = 'voerman_alpha~0'
+    Info: 3: + IC(2.266 ns) + CELL(1.454 ns) = 6.608 ns; Loc. = PIN_H4; Fanout = 0; PIN Node = 'voerman_alpha'
+    Info: Total cell delay = 2.643 ns ( 40.00 % )
+    Info: Total interconnect delay = 3.965 ns ( 60.00 % )
+Info: th for register "klok:cl|s_klok" (data pin = "clear", clock pin = "clock") is -1.605 ns
+    Info: + Longest clock path from clock "clock" to destination register is 2.472 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.727 ns) = 0.727 ns; Loc. = PIN_J6; Fanout = 33; CLK Node = 'clock'
+        Info: 2: + IC(1.171 ns) + CELL(0.574 ns) = 2.472 ns; Loc. = LC_X14_Y3_N6; Fanout = 333; REG Node = 'klok:cl|s_klok'
+        Info: Total cell delay = 1.301 ns ( 52.63 % )
+        Info: Total interconnect delay = 1.171 ns ( 47.37 % )
+    Info: + Micro hold delay of destination is 0.138 ns
+    Info: - Shortest pin to register delay is 4.215 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.727 ns) = 0.727 ns; Loc. = PIN_K6; Fanout = 90; PIN Node = 'clear'
+        Info: 2: + IC(3.119 ns) + CELL(0.369 ns) = 4.215 ns; Loc. = LC_X14_Y3_N6; Fanout = 333; REG Node = 'klok:cl|s_klok'
+        Info: Total cell delay = 1.096 ns ( 26.00 % )
+        Info: Total interconnect delay = 3.119 ns ( 74.00 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 142 megabytes
+    Info: Processing ended: Fri May 22 12:13:21 2009
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

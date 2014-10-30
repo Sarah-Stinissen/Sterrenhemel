@@ -1,0 +1,51 @@
+Project: verlichting
+Revision: verlichting
+Flow Start Date: Mon May 18 15:11:24 Romance (zomertijd) 2009
+Flow End Date: Mon May 18 15:13:00 Romance (zomertijd) 2009
+
+Detailed Results
+Point,base (Best),1
+All Clock Hold Failing Paths,0,unknown
+All Clock Recovery Failing Paths,0,unknown
+All Clock Removal Failing Paths,0,unknown
+All Clock Setup Failing Paths,0,unknown
+All Failing Paths,0,unknown
+Average fan-out,3.88,unknown
+Average Slack for Failing Paths,0,unknown
+Clock Period: Geometric Mean,5.97 ns,unknown
+Clock pins,2,unknown
+Clock Setup: 'clock': Actual Time,5.969 ns,unknown
+Clock Setup: 'clock': Failed Paths,0,unknown
+Clock Setup: 'clock': Slack,unknown,unknown
+Elapsed Time: Analysis & Synthesis,00:00:09,unknown
+Elapsed Time: Assembler,00:00:01,unknown
+Elapsed Time: Classic Timing Analyzer,00:00:03,unknown
+Elapsed Time: Fitter,00:00:05,unknown
+Elapsed Time: Total,00:00:18,unknown
+Global clocks,4,unknown
+Global signals,4,unknown
+Highest non-global fan-out,55,unknown
+Highest non-global fan-out signal,1,unknown
+I/O pins,67,unknown
+Maximum fan-out,333,unknown
+Maximum fan-out node,klok:cl|s_klok,unknown
+Quality of Fit,0.0,unknown
+Total fan-out,2288,unknown
+Total LABs,65,unknown
+Total logic elements,523,unknown
+Total registers,308,unknown
+Total Thermal Power Dissipation,unknown,unknown
+UFM blocks,0,unknown
+Worst-case Slack,unknown ns (unknown),unknown
+Worst-case tco: Actual Time,11.380 ns,unknown
+Worst-case tco: Failed Paths,0,unknown
+Worst-case tco: Slack,unknown,unknown
+Worst-case th: Actual Time,-1.605 ns,unknown
+Worst-case th: Failed Paths,0,unknown
+Worst-case th: Slack,unknown,unknown
+Worst-case tpd: Actual Time,6.608 ns,unknown
+Worst-case tpd: Failed Paths,0,unknown
+Worst-case tpd: Slack,unknown,unknown
+Worst-case tsu: Actual Time,1.951 ns,unknown
+Worst-case tsu: Failed Paths,0,unknown
+Worst-case tsu: Slack,unknown,unknown

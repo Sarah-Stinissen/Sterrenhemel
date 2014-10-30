@@ -1,0 +1,188 @@
+Classic Timing Analyzer report for branden
+Wed Mar 04 19:04:12 2009
+Quartus II Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Clock Setup: 'Clock'
+  6. tco
+  7. tpd
+  8. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                              ;
++------------------------------+-------+---------------+----------------------------------+--------------------------+--------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From                     ; To                       ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+--------------------------+--------------------------+------------+----------+--------------+
+; Worst-case tco               ; N/A   ; None          ; 14.984 ns                        ; tienteller:teller|teller ; branden                  ; Clock      ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 10.023 ns                        ; clear                    ; branden                  ; --         ; --       ; 0            ;
+; Clock Setup: 'Clock'         ; N/A   ; None          ; 261.64 MHz ( period = 3.822 ns ) ; tienteller:teller|tel[0] ; tienteller:teller|tel[1] ; Clock      ; Clock    ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;                          ;                          ;            ;          ; 0            ;
++------------------------------+-------+---------------+----------------------------------+--------------------------+--------------------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EPM2210GF324I5     ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock           ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'Clock'                                                                                                                                                                                                     ;
++-------+------------------------------------------------+--------------------------+--------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From                     ; To                       ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+--------------------------+--------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 261.64 MHz ( period = 3.822 ns )               ; tienteller:teller|tel[0] ; tienteller:teller|tel[1] ; Clock      ; Clock    ; None                        ; None                      ; 3.113 ns                ;
+; N/A   ; 261.99 MHz ( period = 3.817 ns )               ; tienteller:teller|tel[0] ; tienteller:teller|tel[3] ; Clock      ; Clock    ; None                        ; None                      ; 3.108 ns                ;
+; N/A   ; 272.78 MHz ( period = 3.666 ns )               ; tienteller:teller|tel[3] ; tienteller:teller|teller ; Clock      ; Clock    ; None                        ; None                      ; 2.957 ns                ;
+; N/A   ; 281.85 MHz ( period = 3.548 ns )               ; tienteller:teller|tel[1] ; tienteller:teller|teller ; Clock      ; Clock    ; None                        ; None                      ; 2.839 ns                ;
+; N/A   ; 300.30 MHz ( period = 3.330 ns )               ; tienteller:teller|tel[2] ; tienteller:teller|teller ; Clock      ; Clock    ; None                        ; None                      ; 2.621 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[3] ; tienteller:teller|tel[3] ; Clock      ; Clock    ; None                        ; None                      ; 2.370 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[0] ; tienteller:teller|teller ; Clock      ; Clock    ; None                        ; None                      ; 2.295 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[1] ; tienteller:teller|tel[2] ; Clock      ; Clock    ; None                        ; None                      ; 2.032 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[1] ; tienteller:teller|tel[1] ; Clock      ; Clock    ; None                        ; None                      ; 2.030 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[2] ; tienteller:teller|tel[1] ; Clock      ; Clock    ; None                        ; None                      ; 1.928 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[2] ; tienteller:teller|tel[3] ; Clock      ; Clock    ; None                        ; None                      ; 1.794 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[3] ; tienteller:teller|tel[1] ; Clock      ; Clock    ; None                        ; None                      ; 1.791 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|teller ; tienteller:teller|teller ; Clock      ; Clock    ; None                        ; None                      ; 1.780 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[2] ; tienteller:teller|tel[2] ; Clock      ; Clock    ; None                        ; None                      ; 1.780 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[1] ; tienteller:teller|tel[3] ; Clock      ; Clock    ; None                        ; None                      ; 1.574 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[0] ; tienteller:teller|tel[2] ; Clock      ; Clock    ; None                        ; None                      ; 1.566 ns                ;
+; N/A   ; Restricted to 304.04 MHz ( period = 3.289 ns ) ; tienteller:teller|tel[0] ; tienteller:teller|tel[0] ; Clock      ; Clock    ; None                        ; None                      ; 1.555 ns                ;
++-------+------------------------------------------------+--------------------------+--------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++-------------------------------------------------------------------------------------+
+; tco                                                                                 ;
++-------+--------------+------------+--------------------------+---------+------------+
+; Slack ; Required tco ; Actual tco ; From                     ; To      ; From Clock ;
++-------+--------------+------------+--------------------------+---------+------------+
+; N/A   ; None         ; 14.984 ns  ; tienteller:teller|teller ; branden ; Clock      ;
++-------+--------------+------------+--------------------------+---------+------------+
+
+
++---------------------------------------------------------------+
+; tpd                                                           ;
++-------+-------------------+-----------------+-------+---------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To      ;
++-------+-------------------+-----------------+-------+---------+
+; N/A   ; None              ; 10.023 ns       ; clear ; branden ;
++-------+-------------------+-----------------+-------+---------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Mar 04 19:04:12 2009
+Info: Command: quartus_tan --read_settings_files=on --write_settings_files=off branden -c branden --speed=5
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "Clock" is an undefined clock
+Info: Clock "Clock" has Internal fmax of 261.64 MHz between source register "tienteller:teller|tel[0]" and destination register "tienteller:teller|tel[1]" (period= 3.822 ns)
+    Info: + Longest register to register delay is 3.113 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X14_Y2_N9; Fanout = 5; REG Node = 'tienteller:teller|tel[0]'
+        Info: 2: + IC(1.930 ns) + CELL(1.183 ns) = 3.113 ns; Loc. = LC_X14_Y2_N2; Fanout = 4; REG Node = 'tienteller:teller|tel[1]'
+        Info: Total cell delay = 1.183 ns ( 38.00 % )
+        Info: Total interconnect delay = 1.930 ns ( 62.00 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "Clock" to destination register is 7.129 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_V15; Fanout = 5; CLK Node = 'Clock'
+            Info: 2: + IC(5.079 ns) + CELL(0.918 ns) = 7.129 ns; Loc. = LC_X14_Y2_N2; Fanout = 4; REG Node = 'tienteller:teller|tel[1]'
+            Info: Total cell delay = 2.050 ns ( 28.76 % )
+            Info: Total interconnect delay = 5.079 ns ( 71.24 % )
+        Info: - Longest clock path from clock "Clock" to source register is 7.129 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_V15; Fanout = 5; CLK Node = 'Clock'
+            Info: 2: + IC(5.079 ns) + CELL(0.918 ns) = 7.129 ns; Loc. = LC_X14_Y2_N9; Fanout = 5; REG Node = 'tienteller:teller|tel[0]'
+            Info: Total cell delay = 2.050 ns ( 28.76 % )
+            Info: Total interconnect delay = 5.079 ns ( 71.24 % )
+    Info: + Micro clock to output delay of source is 0.376 ns
+    Info: + Micro setup delay of destination is 0.333 ns
+Info: tco from clock "Clock" to destination pin "branden" through register "tienteller:teller|teller" is 14.984 ns
+    Info: + Longest clock path from clock "Clock" to source register is 7.129 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_V15; Fanout = 5; CLK Node = 'Clock'
+        Info: 2: + IC(5.079 ns) + CELL(0.918 ns) = 7.129 ns; Loc. = LC_X14_Y2_N5; Fanout = 2; REG Node = 'tienteller:teller|teller'
+        Info: Total cell delay = 2.050 ns ( 28.76 % )
+        Info: Total interconnect delay = 5.079 ns ( 71.24 % )
+    Info: + Micro clock to output delay of source is 0.376 ns
+    Info: + Longest register to pin delay is 7.479 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X14_Y2_N5; Fanout = 2; REG Node = 'tienteller:teller|teller'
+        Info: 2: + IC(0.981 ns) + CELL(0.511 ns) = 1.492 ns; Loc. = LC_X14_Y2_N8; Fanout = 1; COMB Node = 'branden~0'
+        Info: 3: + IC(3.665 ns) + CELL(2.322 ns) = 7.479 ns; Loc. = PIN_V5; Fanout = 0; PIN Node = 'branden'
+        Info: Total cell delay = 2.833 ns ( 37.88 % )
+        Info: Total interconnect delay = 4.646 ns ( 62.12 % )
+Info: Longest tpd from source pin "clear" to destination pin "branden" is 10.023 ns
+    Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_U15; Fanout = 1; PIN Node = 'clear'
+    Info: 2: + IC(2.704 ns) + CELL(0.200 ns) = 4.036 ns; Loc. = LC_X14_Y2_N8; Fanout = 1; COMB Node = 'branden~0'
+    Info: 3: + IC(3.665 ns) + CELL(2.322 ns) = 10.023 ns; Loc. = PIN_V5; Fanout = 0; PIN Node = 'branden'
+    Info: Total cell delay = 3.654 ns ( 36.46 % )
+    Info: Total interconnect delay = 6.369 ns ( 63.54 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 140 megabytes
+    Info: Processing ended: Wed Mar 04 19:04:13 2009
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,7 @@
+- aardingskabel is GND
+- blauw is +5V
+- Bruin is +3.3V
+
+
+encoder:
+oranje boven

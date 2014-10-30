@@ -1,0 +1,107 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		verlichting_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM2210F324C3
+set_global_assignment -name TOP_LEVEL_ENTITY verlichting
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "8.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:31:42  FEBRUARY 28, 2009"
+set_global_assignment -name LAST_QUARTUS_VERSION "8.0 SP1"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_palace
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_G3 -to cassiopeia
+set_location_assignment PIN_E3 -to cepheus
+set_location_assignment PIN_D3 -to draak
+set_global_assignment -name VHDL_FILE ../klok/klok.vhd
+set_global_assignment -name VHDL_FILE ../decoder/decoder.vhd
+set_global_assignment -name VHDL_FILE ../tienteller/tienteller.vhd
+set_global_assignment -name VHDL_FILE ../Knipperen/knipperen.vhd
+set_global_assignment -name VHDL_FILE ../branden/branden.vhd
+set_global_assignment -name VHDL_FILE verlichting.vhd
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_location_assignment PIN_J6 -to clock
+set_location_assignment PIN_A2 -to grote_beer
+set_location_assignment PIN_B5 -to kleine_beer
+set_location_assignment PIN_B6 -to poolster
+set_location_assignment PIN_A6 -to andromeda
+set_location_assignment PIN_A7 -to andromeda_alpha
+set_location_assignment PIN_A8 -to andromedanevel
+set_location_assignment PIN_A10 -to arend
+set_location_assignment PIN_B11 -to arend_alpha
+set_location_assignment PIN_B12 -to boogschutter
+set_location_assignment PIN_B9 -to dolfijn
+set_location_assignment PIN_A9 -to driehoek
+set_location_assignment PIN_C11 -to grote_hond
+set_location_assignment PIN_D11 -to grote_hond_alpha
+set_location_assignment PIN_C10 -to haas
+set_location_assignment PIN_D2 -to hercules
+set_location_assignment PIN_B1 -to hercules_M13
+set_location_assignment PIN_A13 -to jachthonden
+set_location_assignment PIN_C12 -to kleine_hond
+set_location_assignment PIN_D12 -to kleine_hond_alpha
+set_location_assignment PIN_C14 -to kreeft
+set_location_assignment PIN_D14 -to krib
+set_location_assignment PIN_H3 -to leeuw
+set_location_assignment PIN_B4 -to lier
+set_location_assignment PIN_A4 -to lier_alpha
+set_location_assignment PIN_A14 -to maagd
+set_location_assignment PIN_J3 -to noorderkroon
+set_location_assignment PIN_B3 -to orion
+set_location_assignment PIN_C4 -to orion_beta
+set_location_assignment PIN_C9 -to orionnevel
+set_location_assignment PIN_A17 -to ossehoeder
+set_location_assignment PIN_E4 -to pegasus
+set_location_assignment PIN_F4 -to perseus
+set_location_assignment PIN_C15 -to perseus_cluster
+set_location_assignment PIN_B8 -to pijl
+set_location_assignment PIN_F3 -to raaf
+set_location_assignment PIN_B10 -to ram
+set_location_assignment PIN_D10 -to rivier
+set_location_assignment PIN_D1 -to schorpioen
+set_location_assignment PIN_G4 -to slang
+set_location_assignment PIN_C2 -to slangendrager
+set_location_assignment PIN_B13 -to steenbok
+set_location_assignment PIN_B15 -to stier
+set_location_assignment PIN_B18 -to stier_alpha
+set_location_assignment PIN_F2 -to stier_pleiaden
+set_location_assignment PIN_C13 -to tweelingen
+set_location_assignment PIN_D13 -to tweelingen_alpha
+set_location_assignment PIN_A11 -to vissen
+set_location_assignment PIN_B16 -to voerman
+set_location_assignment PIN_H4 -to voerman_alpha
+set_location_assignment PIN_A12 -to walvis
+set_location_assignment PIN_D4 -to waterman
+set_location_assignment PIN_C3 -to waterslang
+set_location_assignment PIN_A15 -to weegschaal
+set_location_assignment PIN_A5 -to zwaan
+set_location_assignment PIN_B7 -to zwaan_alpha
+set_location_assignment PIN_H2 -to code[0]
+set_location_assignment PIN_H1 -to code[1]
+set_location_assignment PIN_J1 -to code[2]
+set_location_assignment PIN_F1 -to code[3]
+set_location_assignment PIN_G2 -to code[4]
+set_location_assignment PIN_J2 -to code[5]
